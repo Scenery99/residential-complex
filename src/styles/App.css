@@ -1,0 +1,15 @@
+.App {
+    text-align: center;
+  }
+  
+  .navbar-placeholder {
+    height: 130px;
+  }
+  
+  /* Мобильная адаптация (до 768px) */
+  @media (max-width: 768px) {
+    .navbar-placeholder {
+      height: 80px;
+    }
+  }
+  

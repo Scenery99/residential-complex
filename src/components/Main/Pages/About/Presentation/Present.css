@@ -1,0 +1,290 @@
+.presentation {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px 0 60px;
+    border-radius: 12px;
+    position: relative;
+    background-image: url('../../../../../assets/presentation/bgLine.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  
+  .presentation .right {
+    position: relative;
+  }
+  
+  .presentation .right .person {
+    color: #ffffff;
+    width: 140px;
+    position: absolute;
+    top: 370px;
+    left: 40px;
+  }
+  
+  .presentation .right .person h6 {
+    font-family: "TT Travels", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+  }
+  
+  .presentation .right .person p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    opacity: 0.8;
+  }
+  
+  .presentation .left p:first-child {
+    font-family: "TT Travels", sans-serif;
+    color: var(--color-brand-brown);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    margin-left: 120px;
+  }
+  
+  .presentation .left p:last-child {
+    font-size: 14px;
+  }
+  
+  .presentation .left h1 {
+    font-size: 48px;
+    margin: 16px 52px 24px 0;
+  }
+  
+  .presentation .left h1 br {
+    display: none;
+  }
+  
+  .presentation .left p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+  
+  .presentation .phone {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .presentation .phone p:nth-child(2) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: -0.3px;
+    color: black;
+    margin-top: 16px;
+  }
+  
+  .presentation .phone p {
+    font-size: 12px;
+    line-height: 120%;
+    color: var(--color-text-grey);
+  }
+  
+  .presentation .phone input {
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F5F3F0;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    color: var(--color-text-primary);
+    width: 250px;
+    margin: 12px 12px 12px 0;
+  }
+  
+  .presentation .phone input::placeholder {
+    color: var(--color-text-primary);
+    opacity: 0.5;
+  }
+  
+  .presentation .phone .policy {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  
+  .presentation .phone .error {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    color: #ff0000;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 14px;
+    margin-top: 4px;
+    z-index: 1;
+  }
+  
+  .presentation .phone > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .presentation .phone > div br {
+    display: none;
+  }
+  
+  .presentation .long {
+    width: 600px;
+    border: none;
+    height: 1px;
+    background-color: var(--color-line-primary);
+  }
+  
+  .presentation hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-line-primary);
+    margin-top: 28px;
+  }
+  
+  /* Мобильная адаптация (до 768px) */
+  @media (max-width: 768px) {
+    .presentation {
+      flex-direction: column;
+      padding: 20px 5px;
+      background-position: center bottom;
+      border-radius: 8px;
+    }
+  
+    .presentation .left {
+      width: 100%;
+      text-align: start;
+    }
+  
+    .presentation .left p:first-child {
+      margin-left: 0;
+      font-size: 14px;
+    }
+  
+    .presentation .left h1 {
+      font-size: 24px;
+      margin: 12px 0 16px 0;
+    }
+  
+    .presentation .left p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 8px;
+    }
+  
+    .presentation .left p:last-child {
+      text-align: center;
+    }
+  
+    .presentation .left br {
+      display: block;
+    }
+  
+    .presentation .phone {
+      align-items: center;
+      gap: 8px;
+    }
+  
+    .presentation .phone p:nth-child(2) {
+      font-size: 14px;
+      margin: 0;
+    }
+  
+    .presentation .phone p {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  
+    .presentation .phone input {
+      width: 100%;
+      max-width: 250px;
+      padding: 12px;
+      font-size: 14px;
+      margin: 8px 0;
+    }
+  
+    .presentation .phone .error {
+      top: -12px;
+      font-size: 10px;
+      text-align: left;
+      width: 100%;
+    }
+  
+    .presentation .phone > div {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  
+    .presentation .phone > div br {
+      display: block;
+    }
+  
+    .presentation .long {
+      width: 100%;
+    }
+  
+    .presentation hr {
+      margin-top: 0;
+    }
+  
+    .presentation .right {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .presentation .right img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+    }
+  
+    .presentation .right .person {
+      position: static;
+      width: 100%;
+      padding: 10px;
+      color: var(--color-text-primary);
+      background: rgba(255, 255, 255, 0);
+    }
+  
+    .presentation .right .person h6 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  
+    .presentation .right .person p {
+      font-size: 14px;
+      line-height: 16px;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

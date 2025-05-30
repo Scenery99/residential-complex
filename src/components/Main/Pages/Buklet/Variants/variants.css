@@ -1,0 +1,145 @@
+.maintitle {
+    text-align: center;
+  }
+  
+  .maintitle .white {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  
+  .maintitle .white h2 {
+    font-family: "TT Travels", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -3px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 6px;
+    margin-bottom: 40px;
+  }
+  
+  .grid .div1 { grid-area: 1 / 1 / 5 / 6; }
+  .grid .div2 { grid-area: 1 / 1 / 3 / 4; }
+  .grid .div3 { grid-area: 1 / 4 / 3 / 6; }
+  .grid .div4 { grid-area: 3 / 1 / 5 / 3; }
+  .grid .div5 { grid-area: 3 / 3 / 5 / 6; }
+  
+  .grid .div3 {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 12px;
+    height: 334px;
+  }
+  
+  .grid .div3 p {
+    font-family: "TT Travels", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -1px;
+  }
+  
+  .grid .div3 img {
+    object-fit: none;
+  }
+  
+  .grid .div3 span {
+    color: var(--color-brand-brown);
+    font-family: "TT Travels", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-top: 30px;
+  }
+  
+  .grid .dark {
+    background-color: #42352A;
+  }
+  
+  .grid .dark span {
+    color: #C2BDB6;
+  }
+  
+  .grid .dark p {
+    color: #ffffff;
+  }
+  
+  .line {
+    border: none;
+    background-color: var(--color-line-dark);
+    height: 1px;
+    margin: 40px 0;
+  }
+  
+  /* Мобильные стили */
+  @media (max-width: 768px) {
+    .maintitle .white {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+  
+    .maintitle .white h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  
+    .grid {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+  
+    .grid .div1 {
+      display: none;
+    }
+  
+    .grid .div2,
+    .grid .div3,
+    .grid .div4,
+    .grid .div5 {
+      grid-area: auto;
+      width: 100%;
+    }
+  
+    .grid .div2 img,
+    .grid .div4 img,
+    .grid .div5 img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  
+    .grid .div3 {
+      height: auto;
+      padding: 20px;
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  
+    .grid .div3 p {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  
+    .grid .div3 span {
+      margin-top: 15px;
+    }
+  
+    .line {
+      margin: 30px 0;
+    }
+  }
+  

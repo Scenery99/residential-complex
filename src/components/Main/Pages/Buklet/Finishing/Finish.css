@@ -1,0 +1,54 @@
+.finish {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  
+  .finish .maintitle {
+    text-align: center;
+    position: relative;
+  }
+  
+  .finish .maintitle p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
+    margin: 10px 0 60px 0;
+  }
+  
+  .finish .longline {
+    position: absolute;
+    top: 95px;
+    left: 186px;
+  }
+  
+  .finish .cards {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Мобильные стили */
+  @media (max-width: 768px) {
+    .finish {
+      margin-bottom: 50px;
+    }
+  
+    .finish .maintitle p {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 10px 0 40px 0;
+      width: 70%;
+      justify-self: center;
+    }
+  
+    .finish .longline {
+      display: none;
+    }
+  
+    .finish .cards {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  

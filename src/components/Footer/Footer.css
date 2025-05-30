@@ -1,0 +1,184 @@
+:root {
+    --color-line-primary: #e0e0e0;    /* задайте своё значение */
+    --color-brand-green: #42b883;     /* задайте своё значение */
+  }
+  
+  .footer {
+    background-color: #ffffff;
+    padding: 60px 0 155px;
+    position: relative;
+    background-image: url('@/assets/landing/footer-map.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 421px;
+  }
+  
+  .footer .garden {
+    text-align: start;
+    display: flex;
+    gap: 200px;
+    margin-bottom: 20px; /* Отступ перед hr */
+  }
+  
+  .footer .garden img {
+    max-width: 100%; /* Логотип масштабируется */
+    height: auto;
+  }
+  
+  .footer .footer-bottom {
+    display: flex;
+    justify-content: flex-start; /* Офис слева, картинка как фон не влияет */
+  }
+  
+  .footer .office {
+    text-align: start;
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Отступы между блоками внутри .office */
+  }
+  
+  .footer .office-logos {
+    color: var(--color-line-primary);
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 50px;
+  }
+  
+  .footer .office-logos img {
+    max-width: 100%; /* Логотипы масштабируются */
+    height: auto;
+  }
+  
+  .footer .office-address,
+  .footer .office-phone {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    padding-right: 80px;
+  }
+  
+  .footer .office-address p:first-child,
+  .footer .office-phone p:first-child {
+    font-weight: 300;
+  }
+  
+  .footer .office-phone > div {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .footer .office-phone > div p:first-child {
+    font-weight: 400;
+  }
+  
+  .footer hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: var(--color-line-primary);
+    margin: 0;
+  }
+  
+  .footer h3 {
+    font-family: "TT Travels", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1px;
+  }
+  
+  .footer p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -1%;
+  }
+  
+  .footer span {
+    color: var(--color-brand-green);
+    font-family: "TT Travels", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  /* Адаптация для мобильных устройств (до 768px) */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 20px 5px 40px 10px; /* Уменьшаем отступы */
+      background-size: auto 280px; /* Уменьшаем фоновую картинку */
+      background-position: bottom left; /* Центрируем фон */
+    }
+  
+    .footer .garden {
+      flex-direction: column; /* Вертикальная компоновка */
+      gap: 10px; /* Уменьшаем расстояние */
+      text-align: start;
+      margin-bottom: 15px;
+      position: relative;
+    }
+  
+    .footer .garden .logo2 {
+      display: none;
+    }
+  
+    .footer .garden h3 {
+      font-size: 22px; /* Уменьшаем заголовок */
+      line-height: 28px;
+    }
+  
+    .footer .garden img {
+      width: 120px; /* Уменьшаем логотип */
+      margin: 0 auto; /* Центрируем */
+    }
+  
+    .footer .footer-bottom {
+      justify-content: center; /* Центрируем содержимое */
+    }
+  
+    .footer .office {
+      width: 100%; /* На всю ширину */
+      gap: 15px; /* Уменьшаем промежутки */
+      text-align: start;
+    }
+  
+    .footer .office-logos {
+      margin-top: 20px; /* Уменьшаем отступ сверху */
+      gap: 15px; /* Уменьшаем расстояние между логотипами */
+      justify-content: center; /* Центрируем логотипы */
+    }
+  
+    .footer .office-logos img {
+      width: 120px; /* Уменьшаем логотипы */
+    }
+  
+    .footer .office-logos p {
+      font-size: 20px; /* Уменьшаем разделитель */
+    }
+  
+    .footer .office-address,
+    .footer .office-phone {
+      flex-direction: column; /* Вертикальная компоновка */
+      gap: 10px; /* Уменьшаем расстояние */
+      padding-right: 0; /* Убираем правый отступ */
+    }
+  
+    .footer .office-address p,
+    .footer .office-phone p {
+      font-size: 16px; /* Уменьшаем текст */
+      line-height: 20px;
+      width: 50%;
+    }
+  
+    .footer .office-phone > div {
+      flex-direction: column; /* Телефон и "работаем" вертикально */
+      align-items: start;
+    }
+  
+    .footer .office-phone > div span {
+      font-size: 14px; /* Уменьшаем "работаем" */
+    }
+  }
+  

@@ -1,0 +1,139 @@
+.greeting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-main-white);
+  }
+  
+  .greeting .maintitle {
+    position: relative;
+  }
+  
+  .greeting .maintitle .logotwo {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .greeting .maintitle h1 {
+    font-size: 64px;
+    margin-bottom: 1rem;
+  }
+  
+  .greeting .maintitle p {
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1%;
+    padding-bottom: 48px;
+  }
+  
+  .greeting .maintitle .mainline {
+    position: absolute;
+    top: 220px;
+    left: 140px;
+  }
+  
+  .greeting .mainland {
+    position: relative;
+    text-align: center;
+  }
+  
+  .greeting .mainland img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .greeting .award-div {
+    position: absolute;
+    top: -20px;
+    left: 87%;
+    width: 200px;
+    height: 124px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .greeting .award-div p {
+    font-family: "TT Travels", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: -4%;
+    color: var(--color-text-primary);
+  }
+  
+  .greeting .when {
+    position: absolute;
+    top: 93%;
+    left: 40%;
+    display: flex;
+    gap: 20px;
+    font-family: "TT Travels", sans-serif;
+    line-height: 16px;
+    font-size: 16px;
+    letter-spacing: -2%;
+  }
+  
+  .greeting .when div {
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(16px);
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .greeting .when div span {
+    color: var(--color-brand-green);
+  }
+  
+  /* Адаптация для мобильных устройств (до 768px) */
+  @media (max-width: 768px) {
+    .greeting {
+      padding: 1px;
+    }
+  
+    .greeting .maintitle h1 {
+      font-size: 28px;
+      margin-bottom: 0.5rem;
+    }
+  
+    .greeting .maintitle p {
+      font-size: 16px;
+      line-height: 20px;
+      padding-bottom: 20px;
+    }
+  
+    .greeting .maintitle .mainline {
+      display: none;
+    }
+  
+    .greeting .mainland img {
+      object-fit: cover;
+    }
+  
+    .greeting .mainland .award-div {
+      position: static;
+      width: 70%;
+      height: auto;
+      padding: 10px;
+      margin: 20px auto 0;
+    }
+  
+    .greeting .mainland .when {
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      gap: 20px;
+      width: max-content;
+    }
+  }
+  
