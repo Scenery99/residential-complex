@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AnimatePresence, motion } from 'framer-motion';
+// import { AnimatePresence, motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import Logo from '@/assets/landing/Logo.svg';
 import '../Navbar/Navbar.css';
 
@@ -27,20 +28,20 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
+      <div className="navbar__logo">
         <Link to="/">
           <img src={Logo} alt="navbarlogo" className="logo" />
         </Link>
         <p>Официальный партнер <br /> АО «КККК»</p>
       </div>
-      <div className="navbar-menu-container">
-        <button className="navbar-menu-btn" onClick={toggleMenu}>
+      <div className="navbar__menu-container">
+        <button className="navbar__menu-btn" onClick={toggleMenu}>
           M E N U
         </button>
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              className="navbar-menu"
+              className="navbar__menu"
               initial={variants.initial}
               animate={variants.animate}
               exit={variants.exit}
@@ -56,7 +57,7 @@ function Navbar() {
           )}
         </AnimatePresence>
       </div>
-      <div className="navbar-phone">
+      <div className="navbar__phone">
         <a href="tel:+7 495 845 19 34">+7 495 845 19 34</a>
         <hr />
         <p>· работаем</p>

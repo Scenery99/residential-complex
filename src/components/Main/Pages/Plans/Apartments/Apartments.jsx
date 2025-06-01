@@ -2,12 +2,12 @@ import './Apartments.css';
 import PhotoCard from '../../../PhotoCard/PhotoCard';
 import Container from '../../../Container/Container';
 import Modal from '../../../Modals/Modal';
-import Apart from '@/assets/apartments/apartment1.png';
-import Apart1 from '@/assets/apartments/apartment2.png';
-import Apart2 from '@/assets/apartments/apartment3.png';
-import Apart3 from '@/assets/apartments/apartment4.png';
-import MiddleLine from '@/assets/lines/line4.svg';
-import Miniline from '@/assets/lines/line5.svg';
+import Apartment1 from '@/assets/apartments/apartment1.png';
+import Apartment2 from '@/assets/apartments/apartment2.png';
+import Apartment3 from '@/assets/apartments/apartment3.png';
+import Apartment4 from '@/assets/apartments/apartment4.png';
+import line4 from '@/assets/lines/line4.svg';
+import line5 from '@/assets/lines/line5.svg';
 import { useState } from 'react';
 
 function Apartments() {
@@ -32,13 +32,13 @@ function Apartments() {
   return (
     <Container>
       <section className="apartments">
-        <h1>Более 100 свободных квартир <br /> редких форматов <img className='middleline' src={MiddleLine} alt="line" /></h1>
+        <h1>Более 100 свободных квартир <br /> редких форматов <img className='line4' src={line4} alt="line" /></h1>
         <PhotoCard
-          image={Apart}
+          image={Apartment1}
           title={
             <>
               Свободная планировка, возможность объединить квартиры до 500 м²
-              <img className='miniline' src={Miniline} alt="line" />
+              <img className='line5' src={line5} alt="line" />
             </>
           }
           description={
@@ -52,7 +52,7 @@ function Apartments() {
           onLinkClick={() => openModal({ title: 'Свободной планировки до 500 м²' })}
         />
         <PhotoCard
-          image={Apart1}
+          image={Apartment2}
           title={
             <>Настоящий <br /> дровяной камин</>
           }
@@ -66,7 +66,7 @@ function Apartments() {
           onLinkClick={() => openModal({ title: 'Настоящего дровяного камина' })}
         />
         <PhotoCard
-          image={Apart2}
+          image={Apartment3}
           title={
             <>
               Собственная <br />терраса до 17 м²
@@ -83,7 +83,7 @@ function Apartments() {
           onLinkClick={() => openModal({ title: 'Собственной террасы до 17 м²' })}
         />
         <PhotoCard
-          image={Apart3}
+          image={Apartment4}
           title={
             <> Увеличенная<br /> высота потолка</>
           }

@@ -2,22 +2,22 @@ import { useState, useEffect } from 'react';
 import Container from '@components/Main/Container/Container';
 import Button from '@components/Main/Button/Button';
 import './Quiz.css';
-import decor1 from '@/assets/test/figure1.png';
-import decor2 from '@/assets/test/figure2.png';
-import decor3 from '@/assets/test/figure3.png';
-import decor4 from '@/assets/test/figure4.png';
-import decor5 from '@/assets/test/figure5.png';
-import decor6 from '@/assets/test/figure6.png';
-import decor7 from '@/assets/test/figure7.png';
-import decor8 from '@/assets/test/figure8.png';
-import decor9 from '@/assets/test/figure9.png';
-import decor10 from '@/assets/test/figure10.png';
-import pageone from '@/assets/test/pageone1.png';
+import figure1 from '@/assets/test/figure1.png';
+import figure2 from '@/assets/test/figure2.png';
+import figure3 from '@/assets/test/figure3.png';
+import figure4 from '@/assets/test/figure4.png';
+import figure5 from '@/assets/test/figure5.png';
+import figure6 from '@/assets/test/figure6.png';
+import figure7 from '@/assets/test/figure7.png';
+import figure8 from '@/assets/test/figure8.png';
+import figure9 from '@/assets/test/figure9.png';
+import figure10 from '@/assets/test/figure10.png';
+import pageone1 from '@/assets/test/pageone1.png';
 import pageone2 from '@/assets/test/pageone1.png';
-import pagetwo from '@/assets/test/pagetwo1.png';
+import pagetwo1 from '@/assets/test/pagetwo1.png';
 import pagetwo2 from '@/assets/test/pagetwo2.png';
 import pagetwo3 from '@/assets/test/pagetwo3.png';
-import pagetree from '@/assets/test/pagethree1.png';
+import pagetree1 from '@/assets/test/pagethree1.png';
 import pagetree2 from '@/assets/test/pagethree2.png';
 import pagetree3 from '@/assets/test/pagethree3.png';
 import whatsapp from '@/assets/test/whatsapp.png';
@@ -26,7 +26,7 @@ import viber from '@/assets/test/viber.png';
 import { GoArrowLeft } from 'react-icons/go';
 import { IMaskInput } from 'react-imask';
 
-const decorImages = [decor1, decor2, decor3, decor4, decor5, decor6, decor7, decor8, decor9, decor10];
+const decorImages = [figure1, figure2, figure3, figure4, figure5, figure6, figure7, figure8, figure9, figure10];
 
 function Quiz() {
   const [isStarted, setIsStarted] = useState(false);
@@ -82,14 +82,14 @@ function Quiz() {
     {
       title: <>Какая недвижимость <br /> вас интересует?</>,
       options: [
-        { image: pageone, text: 'Квартира', value: 'apartment', className: 'size-large' },
+        { image: pageone1, text: 'Квартира', value: 'apartment', className: 'size-large' },
         { image: pageone2, text: 'Пентхаус', value: 'penthouse', className: 'size-large' },
       ],
     },
     {
       title: <>Какая планировка <br /> вам подходит?</>,
       options: [
-        { image: pagetwo, text: '1-комнатная', value: '1-room', className: 'size-medium' },
+        { image: pagetwo1, text: '1-комнатная', value: '1-room', className: 'size-medium' },
         { image: pagetwo2, text: '2-комнатная', value: '2-room', className: 'size-medium' },
         { image: pagetwo3, text: 'Свободная', value: 'free', className: 'size-medium' },
       ],
@@ -97,7 +97,7 @@ function Quiz() {
     {
       title: <>Какую площадь объекта <br /> вы рассматриваете?</>,
       options: [
-        { image: pagetree, text: 'До 50 м²', value: 'small', className: 'size-medium-centered' },
+        { image: pagetree1, text: 'До 50 м²', value: 'small', className: 'size-medium-centered' },
         { image: pagetree2, text: '50-100 м²', value: 'medium', className: 'size-medium-centered' },
         { image: pagetree3, text: 'Более 100 м²', value: 'large', className: 'size-medium-centered' },
       ],
@@ -112,11 +112,11 @@ function Quiz() {
   ];
 
   const renderStartPage = () => (
-    <div className="quiz-start">
+    <div className="quiz__start">
       <h1>Какая квартира <br /> подойдет именно вам?</h1>
       <p>Ответьте на 4 вопроса, чтобы подобрать <br /> идеальный вариант недвижимости</p>
       <Button text="Пройти тест" color="black" onClick={startQuiz} />
-      <div className="quiz-decor">
+      <div className="quiz__decor">
         {decorImages.map((src, i) => (
           <img key={i} src={src} alt={`decor-${i}`} />
         ))}
@@ -125,26 +125,26 @@ function Quiz() {
   );
 
   const renderProgressBar = () => (
-    <div className="quiz-progress">
+    <div className="quiz__progress">
       {Array(4).fill().map((_, i) => (
-        <div key={i} className={`quiz-progress__bar ${i <= step ? 'filled' : ''}`} />
+        <div key={i} className={`quiz__progress__bar ${i <= step ? 'filled' : ''}`} />
       ))}
     </div>
   );
 
   const renderQuestion = () => (
-    <div className="quiz-question">
+    <div className="quiz__question">
       <h2>{questions[step].title}</h2>
-      <div className="quiz-options">
+      <div className="quiz__options">
         {questions[step].options.map((option, i) => (
           <div
             key={i}
-            className={`quiz-card ${selectedOption === option.value ? 'selected' : ''} ${option.className || ''}`}
+            className={`quiz__card ${selectedOption === option.value ? 'selected' : ''} ${option.className || ''}`}
             onClick={() => setSelectedOption(option.value)}
           >
             {option.image && <img src={option.image} alt={option.text} />}
             <p>{option.text}</p>
-            <div className={`quiz-checkbox ${selectedOption === option.value ? 'checked' : ''}`}>
+            <div className={`quiz__checkbox ${selectedOption === option.value ? 'checked' : ''}`}>
               {selectedOption === option.value && (
                 <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
                   <path d="M1 5.5L4.5 9L11 1" stroke="white" strokeWidth="2" />
@@ -158,13 +158,13 @@ function Quiz() {
   );
 
   const renderResult = () => (
-    <div className={`quiz-result ${isSubmitted ? 'submitted' : ''}`}>
+    <div className={`quiz__result ${isSubmitted ? 'submitted' : ''}`}>
       {isSubmitted ? (
         <h2>Варианты отправлены!</h2>
       ) : (
         <>
           <h2>Подобрали 4 варианта недвижимости <br />по вашим параметрам. Куда их прислать?</h2>
-          <div className="quiz-messengers">
+          <div className="quiz__messengers">
             {[
               { icon: whatsapp, text: 'В WhatsApp', value: 'whatsapp' },
               { icon: telegram, text: 'В Telegram', value: 'telegram' },
@@ -172,10 +172,10 @@ function Quiz() {
             ].map((m, i) => (
               <div
                 key={i}
-                className={`quiz-messenger ${messenger === m.value ? 'selected' : ''} size-small`}
+                className={`quiz__messenger ${messenger === m.value ? 'selected' : ''} size-small`}
                 onClick={() => setMessenger(m.value)}
               >
-                <div className={`quiz-messenger__checkbox ${messenger === m.value ? 'checked' : ''}`}>
+                <div className={`quiz__messenger__checkbox ${messenger === m.value ? 'checked' : ''}`}>
                   {messenger === m.value && (
                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none">
                       <path d="M1 5.5L4.5 9L11 1" stroke="white" strokeWidth="2" />
@@ -187,8 +187,8 @@ function Quiz() {
               </div>
             ))}
           </div>
-          <div className="quiz-form">
-            <div className="quiz-form-input-wrapper">
+          <div className="quiz__form">
+            <div className="quiz__form-input-wrapper">
               <IMaskInput
                 mask="+7 000-000-00-00"
                 unmask={false}
@@ -196,9 +196,9 @@ function Quiz() {
                 type="tel"
                 value={phone}
                 onAccept={(value) => setPhone(value)}
-                className="quiz-form-input"
+                className="quiz__form-input"
               />
-              {phoneError && <p className="quiz-form-error">{phoneError}</p>}
+              {phoneError && <p className="quiz__form-error">{phoneError}</p>}
             </div>
             <Button
               text={`Получить варианты ${messenger ? `в ${messenger === 'whatsapp' ? 'WhatsApp' : messenger === 'telegram' ? 'Telegram' : 'Viber'}` : ''}`}
@@ -222,10 +222,10 @@ function Quiz() {
         {!isStarted ? (
           renderStartPage()
         ) : (
-          <div className="quiz-content">
+          <div className="quiz__content">
             {renderProgressBar()}
             {step > 0 && (
-              <button className="quiz-back" onClick={prevStep}>
+              <button className="quiz__back" onClick={prevStep}>
                 <GoArrowLeft />
                 Назад
               </button>
@@ -236,7 +236,7 @@ function Quiz() {
                 text="Дальше"
                 color="black"
                 onClick={nextStep}
-                className="quiz-next"
+                className="quiz__next"
                 disabled={selectedOption === null}
               />
             )}

@@ -1,4 +1,7 @@
-.greeting {
+/* ==============================
+   Секция .greeting
+   ============================== */
+   .greeting {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,21 +10,21 @@
     background-color: var(--color-main-white);
   }
   
-  .greeting .maintitle {
+  .greeting .mainTitle {
     position: relative;
   }
   
-  .greeting .maintitle .logotwo {
+  .greeting .mainTitle .logotwo {
     max-width: 100%;
     height: auto;
   }
   
-  .greeting .maintitle h1 {
+  .greeting .mainTitle h1 {
     font-size: 64px;
     margin-bottom: 1rem;
   }
   
-  .greeting .maintitle p {
+  .greeting .mainTitle p {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 300;
     font-size: 24px;
@@ -30,18 +33,18 @@
     padding-bottom: 48px;
   }
   
-  .greeting .maintitle .mainline {
+  .greeting .mainTitle .line1 {
     position: absolute;
     top: 220px;
     left: 140px;
   }
   
-  .greeting .mainland {
+  .greeting .mainLand {
     position: relative;
     text-align: center;
   }
   
-  .greeting .mainland img {
+  .greeting .mainLand img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -95,32 +98,34 @@
     color: var(--color-brand-green);
   }
   
-  /* Адаптация для мобильных устройств (до 768px) */
+  /* ==============================
+     Мобильная адаптация (до 768px)
+     ============================== */
   @media (max-width: 768px) {
     .greeting {
       padding: 1px;
     }
   
-    .greeting .maintitle h1 {
+    .greeting .mainTitle h1 {
       font-size: 28px;
       margin-bottom: 0.5rem;
     }
   
-    .greeting .maintitle p {
+    .greeting .mainTitle p {
       font-size: 16px;
       line-height: 20px;
       padding-bottom: 20px;
     }
   
-    .greeting .maintitle .mainline {
+    .greeting .mainTitle .line1 {
       display: none;
     }
   
-    .greeting .mainland img {
+    .greeting .mainLand img {
       object-fit: cover;
     }
   
-    .greeting .mainland .award-div {
+    .greeting .mainLand .award-div {
       position: static;
       width: 70%;
       height: auto;
@@ -128,10 +133,10 @@
       margin: 20px auto 0;
     }
   
-    .greeting .mainland .when {
+    .greeting .mainLand .when {
       top: 65%;
       left: 50%;
-      transform: translate(-50%, 0%);
+      transform: translateX(-50%);
       gap: 20px;
       width: max-content;
     }

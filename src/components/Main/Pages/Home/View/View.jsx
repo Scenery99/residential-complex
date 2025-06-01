@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useSwipeable } from 'react-swipeable';
 import './View.css';
 import view1 from '@/assets/views/poklonGora.jpg';
@@ -62,7 +63,7 @@ function View() {
       
       {/* Улучшенный мобильный слайдер */}
       {isMobile ? (
-        <div className="mobile-view-slider" {...swipeHandlers}>
+        <div className="mobile-view__slider" {...swipeHandlers}>
           <div className="slider-container">
             <motion.img
               key={currentSlide}

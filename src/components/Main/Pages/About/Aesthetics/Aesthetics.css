@@ -1,0 +1,204 @@
+/* ==============================
+   Блок .aesthetics
+   ============================== */
+   .aesthetics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Заголовок (элемент) */
+  .aesthetics__title {
+    margin: 80px 0 40px 0;
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Карточка-элемент */
+  .aesthetics__item {
+    padding: 40px 20px 20px 20px;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  
+  /* Строка внутри карточки: общий flex-контейнер */
+  .aesthetics__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  /* Заголовок + иконка: обёртка */
+  .aesthetics__header {
+    display: flex;
+    justify-content: start;
+    margin-left: 16px;
+  }
+  
+  /* Иконка (элемент) */
+  .aesthetics__icon {
+    margin-left: 20px;
+  }
+  
+  /* Сам заголовок h3 (элемент) */
+  .aesthetics__heading {
+    font-family: "TT Travels", sans-serif;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 100%;
+    letter-spacing: -2px;
+    margin: 10px 170px 10px 0;
+  }
+  
+  /* Контейнер для “звёздочек” */
+  .aesthetics__stars {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  
+  /* Одна “звёздочка” */
+  .aesthetics__star {
+    background-color: #F7F1E9;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 100%;
+    padding: 6px 12px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 4px;
+    margin-right: -18px;
+    align-items: center;
+  }
+  
+  /* Контейнер для фотографий */
+  .aesthetics__images {
+    display: flex;
+    gap: 8px;
+  }
+  
+  /* Каждая фотография */
+  .aesthetics__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Модификатор для первой фотографии */
+  .aesthetics__image--first {
+    margin-bottom: 10px;
+  }
+  
+  /* ==============================
+     Мобильная адаптация (до 768px)
+     ============================== */
+  @media (max-width: 768px) {
+    .aesthetics {
+      padding: 1px;
+    }
+  
+    .aesthetics__title {
+      font-size: 28px;
+      margin: 20px 0 10px 0;
+      line-height: 32px;
+    }
+  
+    .aesthetics__item {
+      padding: 1px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+  
+    /* Если внутри карточки есть элемент .firstphoto – теперь он .aesthetics__image--first */
+    .aesthetics__image--first {
+      margin-bottom: 10px;
+    }
+  
+    /* “Ряд” внутри карточки превращается в колонку */
+    .aesthetics__row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Прямой потомок карточки (две колонки) */
+    .aesthetics__item > .aesthetics__row > div {
+      width: 100%;
+    }
+  
+    .aesthetics__heading {
+      font-size: 24px;
+      margin: 8px 8px;
+      letter-spacing: -1px;
+    }
+  
+    .aesthetics__star {
+      margin-bottom: 10px;
+      font-size: 12px;
+      padding: 4px 8px;
+      width: 190px;
+      margin-right: auto;
+    }
+  
+    .aesthetics__icon {
+      margin-left: 0;
+      width: 24px;
+      height: 24px;
+    }
+  
+    .aesthetics__header {
+      margin-left: 0;
+      align-items: center;
+      flex-direction: row;
+      padding: 5px;
+    }
+  
+    /* Убираем зазор между прямыми потомками в row */
+    .aesthetics__row > div {
+      gap: 0;
+    }
+  }
+  
+  /* ==============================
+     Ещё более узкая адаптация (до 480px)
+     ============================== */
+  @media (max-width: 480px) {
+    .aesthetics {
+      padding: 0;
+    }
+  
+    .aesthetics__title {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  
+    .aesthetics__item {
+      padding: 1px;
+    }
+  
+    .aesthetics__row {
+      gap: 8px;
+    }
+  
+    .aesthetics__heading {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  
+    .aesthetics__star {
+      font-size: 12px;
+      padding: 4px 8px;
+      width: 190px;
+      margin-right: auto;
+    }
+  
+    .aesthetics__icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  

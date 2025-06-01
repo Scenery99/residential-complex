@@ -1,184 +1,234 @@
 :root {
-    --color-line-primary: #e0e0e0;    /* задайте своё значение */
-    --color-brand-green: #42b883;     /* задайте своё значение */
-  }
-  
+  --color-line-primary: #e0e0e0;
+  --color-brand-green: #42b883;
+}
+
+.footer {
+  background-color: #ffffff;
+  padding: 60px 0 155px;
+  position: relative;
+  background-image: url('@/assets/landing/footer__map.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 421px;
+}
+
+.footer__intro {
+  display: flex;
+  align-items: flex-start;
+  text-align: start;
+  gap: 200px;
+  margin-bottom: 20px; 
+}
+
+.footer__intro img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer__title {
+  font-family: "TT Travels", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.footer__logo-west {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer hr {
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: var(--color-line-primary);
+  margin: 0;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer__office {
+  text-align: start;
+  width: 570px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__office h3 {
+  font-family: "TT Travels", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.footer__office p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1%;
+  margin: 0;
+}
+
+.footer__office span {
+  color: var(--color-brand-green);
+  font-family: "TT Travels", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.footer__office-logos {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.footer__office-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer__office-address,
+.footer__office-phone {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-right: 80px;
+}
+
+.footer__office-label {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1%;
+  margin: 0;
+}
+
+.footer__office-details {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1%;
+  margin: 0;
+}
+
+.footer__phone-info {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.footer__phone-number {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -1%;
+  margin: 0;
+}
+
+.footer__phone-status {
+  color: var(--color-brand-green);
+  font-family: "TT Travels", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
   .footer {
-    background-color: #ffffff;
-    padding: 60px 0 155px;
-    position: relative;
-    background-image: url('@/assets/landing/footer-map.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: auto 421px;
+    padding: 20px 5px 40px 10px;
+    background-size: auto 280px;
+    background-position: bottom left;
   }
-  
-  .footer .garden {
-    text-align: start;
-    display: flex;
-    gap: 200px;
-    margin-bottom: 20px; /* Отступ перед hr */
-  }
-  
-  .footer .garden img {
-    max-width: 100%; /* Логотип масштабируется */
-    height: auto;
-  }
-  
-  .footer .footer-bottom {
-    display: flex;
-    justify-content: flex-start; /* Офис слева, картинка как фон не влияет */
-  }
-  
-  .footer .office {
-    text-align: start;
-    width: 570px;
-    display: flex;
+
+  .footer__intro {
     flex-direction: column;
-    gap: 20px; /* Отступы между блоками внутри .office */
-  }
-  
-  .footer .office-logos {
-    color: var(--color-line-primary);
-    display: flex;
     align-items: center;
-    gap: 25px;
-    margin-top: 50px;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 15px;
   }
-  
-  .footer .office-logos img {
-    max-width: 100%; /* Логотипы масштабируются */
-    height: auto;
+
+  .footer__title {
+    font-size: 22px;
+    line-height: 28px;
   }
-  
-  .footer .office-address,
-  .footer .office-phone {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    padding-right: 80px;
+
+  .footer__logo-west {
+    width: 120px;
+    margin: 0 auto;
   }
-  
-  .footer .office-address p:first-child,
-  .footer .office-phone p:first-child {
-    font-weight: 300;
+
+  .footer__bottom {
+    justify-content: center;
   }
-  
-  .footer .office-phone > div {
-    display: flex;
+
+  .footer__office {
+    width: 100%;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer__office h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .footer__office p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .footer__office-logos {
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .footer__office-logo {
+    width: 80px;
+  }
+
+  .footer__office-address,
+  .footer__office-phone {
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .footer__office-label,
+  .footer__office-details,
+  .footer__phone-number {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .footer__phone-info {
+    flex-direction: column;
+    align-items: center;
     gap: 5px;
   }
-  
-  .footer .office-phone > div p:first-child {
-    font-weight: 400;
+
+  .footer__phone-status {
+    font-size: 14px;
   }
-  
-  .footer hr {
-    width: 100%;
-    height: 1px;
-    border: none;
-    background-color: var(--color-line-primary);
-    margin: 0;
-  }
-  
-  .footer h3 {
-    font-family: "TT Travels", sans-serif;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: -1px;
-  }
-  
-  .footer p {
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -1%;
-  }
-  
-  .footer span {
-    color: var(--color-brand-green);
-    font-family: "TT Travels", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
-  /* Адаптация для мобильных устройств (до 768px) */
-  @media (max-width: 768px) {
-    .footer {
-      padding: 20px 5px 40px 10px; /* Уменьшаем отступы */
-      background-size: auto 280px; /* Уменьшаем фоновую картинку */
-      background-position: bottom left; /* Центрируем фон */
-    }
-  
-    .footer .garden {
-      flex-direction: column; /* Вертикальная компоновка */
-      gap: 10px; /* Уменьшаем расстояние */
-      text-align: start;
-      margin-bottom: 15px;
-      position: relative;
-    }
-  
-    .footer .garden .logo2 {
-      display: none;
-    }
-  
-    .footer .garden h3 {
-      font-size: 22px; /* Уменьшаем заголовок */
-      line-height: 28px;
-    }
-  
-    .footer .garden img {
-      width: 120px; /* Уменьшаем логотип */
-      margin: 0 auto; /* Центрируем */
-    }
-  
-    .footer .footer-bottom {
-      justify-content: center; /* Центрируем содержимое */
-    }
-  
-    .footer .office {
-      width: 100%; /* На всю ширину */
-      gap: 15px; /* Уменьшаем промежутки */
-      text-align: start;
-    }
-  
-    .footer .office-logos {
-      margin-top: 20px; /* Уменьшаем отступ сверху */
-      gap: 15px; /* Уменьшаем расстояние между логотипами */
-      justify-content: center; /* Центрируем логотипы */
-    }
-  
-    .footer .office-logos img {
-      width: 120px; /* Уменьшаем логотипы */
-    }
-  
-    .footer .office-logos p {
-      font-size: 20px; /* Уменьшаем разделитель */
-    }
-  
-    .footer .office-address,
-    .footer .office-phone {
-      flex-direction: column; /* Вертикальная компоновка */
-      gap: 10px; /* Уменьшаем расстояние */
-      padding-right: 0; /* Убираем правый отступ */
-    }
-  
-    .footer .office-address p,
-    .footer .office-phone p {
-      font-size: 16px; /* Уменьшаем текст */
-      line-height: 20px;
-      width: 50%;
-    }
-  
-    .footer .office-phone > div {
-      flex-direction: column; /* Телефон и "работаем" вертикально */
-      align-items: start;
-    }
-  
-    .footer .office-phone > div span {
-      font-size: 14px; /* Уменьшаем "работаем" */
-    }
-  }
-  
+}

@@ -1,4 +1,4 @@
-import './Present.css';
+import './Presentation.css';
 import Alena from '@/assets/presentation/Alena.png';
 import Button from '../../../Button/Button';
 import Container from '../../../Container/Container';

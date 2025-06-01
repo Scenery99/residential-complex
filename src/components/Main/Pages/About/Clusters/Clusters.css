@@ -1,4 +1,7 @@
-.clusters {
+/* ==============================
+   Секция .clusters
+   ============================== */
+   .clusters {
     width: 100%;
     padding: 50px 0;
     margin: 60px 0 0 0;
@@ -14,11 +17,14 @@
     text-align: center;
   }
   
+  /* Слайдер (дексктопная версия) */
   .clusters .slider {
     width: 100%;
     padding: 80px 0;
+    position: relative;
   }
   
+  /* Цветовые модификаторы */
   .clusters .slider.slider-blue {
     background-color: var(--color-brand-blue);
   }
@@ -27,34 +33,40 @@
     background-color: var(--color-brand-green);
   }
   
+  /* Внутренний контент слайдера */
   .clusters .slider .slider-content {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     margin-bottom: 30px;
   }
   
+  /* Блок с текстом внутри слайдера */
   .clusters .slider .slider-content .slider-text {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
   
+  /* Если внутри .slider-text есть подслайдер */
   .clusters .slider .slider-content .slider-text .subslider {
     display: flex;
     gap: 20px;
   }
   
+  /* Логотип внутри текстового блока */
   .clusters .slider .slider-content .slider-text .slider-logo {
     width: 50px;
     height: auto;
   }
   
+  /* Заголовок внутри .slider-text */
   .clusters .slider .slider-content .slider-text h1 {
     color: #fff;
     line-height: 56px;
   }
   
+  /* Описание внутри .slider-text */
   .clusters .slider .slider-content .slider-text p {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 300;
@@ -65,6 +77,7 @@
     max-width: 400px;
   }
   
+  /* Контейнер с фотографиями слайдера */
   .clusters .slider .slider-photos {
     position: relative;
     width: 100%;
@@ -73,6 +86,7 @@
     justify-content: center;
   }
   
+  /* Обёртка, в которой “листаются” слайды */
   .clusters .slider .slider__content {
     width: 100%;
     height: 580px;
@@ -80,17 +94,20 @@
     margin: 0 auto;
   }
   
+  /* Непосредственно ряд элементов-слайдов */
   .clusters .slider .slider__wrapper {
     display: flex;
     gap: 20px;
   }
   
+  /* Один слайд */
   .clusters .slider .slider__item {
     position: relative;
     flex: 0 0 1180px;
     height: 580px;
   }
   
+  /* Изображение внутри одного слайда */
   .clusters .slider .slider__image {
     width: 1180px;
     height: 580px;
@@ -98,6 +115,7 @@
     object-fit: cover;
   }
   
+  /* Название поверх картинки внизу */
   .clusters .slider .slider__title {
     position: absolute;
     bottom: 20px;
@@ -109,6 +127,7 @@
     color: #fff;
   }
   
+  /* Стрелки навигации слайдера */
   .clusters .slider .slider__arrow {
     position: absolute;
     top: 50%;
@@ -126,23 +145,31 @@
     justify-content: center;
   }
   
+  /* Левая стрелка */
   .clusters .slider .slider__arrow--left {
     left: 20px;
   }
   
+  /* Правая стрелка */
   .clusters .slider .slider__arrow--right {
     right: 20px;
   }
   
+  /* Ховер-эффект для стрелок */
   .clusters .slider .slider__arrow:hover {
     background: rgba(0, 0, 0, 0.9);
   }
   
+  /* Размер SVG внутри стрелок */
   .clusters .slider .slider__arrow svg {
     width: 24px;
     height: 24px;
   }
   
+  
+  /* ==============================
+     .mobile-cluster (альтернативный вариант для мобильных “кластеров”)
+     ============================== */
   .clusters .mobile-cluster {
     padding: 15px 4px;
     margin-bottom: 20px;
@@ -150,6 +177,7 @@
     overflow: hidden;
   }
   
+  /* Цветовые модификаторы для мобильного кластера */
   .clusters .mobile-cluster--blue {
     background-color: var(--color-brand-blue);
   }
@@ -158,6 +186,10 @@
     background-color: var(--color-brand-green);
   }
   
+  
+  /* ==============================
+     .mobile-slider (мобильная версия основного слайдера)
+     ============================== */
   .clusters .mobile-slider {
     display: flex;
     flex-direction: column;
@@ -166,6 +198,7 @@
     padding: 4px;
   }
   
+  /* Заголовок/шапка мобильного слайдера */
   .clusters .mobile-slider__header {
     display: flex;
     align-items: center;
@@ -173,11 +206,13 @@
     padding: 0 4px;
   }
   
+  /* Логотип в шапке мобильного слайдера */
   .clusters .mobile-slider__logo {
     width: 40px;
     height: auto;
   }
   
+  /* Описание под логотипом (моб.) */
   .clusters .mobile-slider__description {
     font-family: "Helvetica Neue", sans-serif;
     font-weight: 300;
@@ -186,6 +221,7 @@
     padding: 0 4px;
   }
   
+  /* Контейнер для “раскрытия” кадра мобильного слайда */
   .clusters .mobile-slider__content {
     position: relative;
     width: 100%;
@@ -194,12 +230,14 @@
     overflow: hidden;
   }
   
+  /* Один абсолютный блок слайда (чтобы накладывались) */
   .clusters .mobile-slider__slide {
     position: absolute;
     width: 100%;
     height: 100%;
   }
   
+  /* Картинка внутри мобильного слайда */
   .clusters .mobile-slider__image {
     width: 100%;
     height: 100%;
@@ -207,6 +245,7 @@
     user-select: none;
   }
   
+  /* Текст название внизу картинки (моб.) */
   .clusters .mobile-slider__title {
     position: absolute;
     bottom: 0;
@@ -220,6 +259,7 @@
     margin: 0;
   }
   
+  /* Блок управления (стрелки и точки) внизу (моб.) */
   .clusters .mobile-slider__controls {
     display: flex;
     align-items: center;
@@ -228,6 +268,7 @@
     padding: 0 4px;
   }
   
+  /* Стрелка управления (моб.) */
   .clusters .mobile-slider__arrow {
     background: rgba(255, 255, 255, 0.2);
     border: none;
@@ -252,11 +293,13 @@
     height: 20px;
   }
   
+  /* Точки-пагинация (моб.) */
   .clusters .mobile-slider__dots {
     display: flex;
     gap: 8px;
   }
   
+  /* Одна “точка” */
   .clusters .mobile-slider__dot {
     width: 10px;
     height: 10px;
@@ -268,6 +311,7 @@
     transition: background 0.2s ease;
   }
   
+  /* Активная точка */
   .clusters .mobile-slider__dot.active {
     background: white;
   }
@@ -276,12 +320,16 @@
     transform: scale(1.1);
   }
   
+  /* Кнопка внизу (моб.) */
   .clusters .mobile-slider__button {
     width: calc(100% - 8px);
     margin: 10px 4px 0;
   }
   
-  /* Мобильная версия (до 768px) */
+  
+  /* ==============================
+     Мобильная версия секции “clusters” (до 768px)
+     ============================== */
   @media (max-width: 768px) {
     .clusters {
       padding: 30px 0;
@@ -294,10 +342,12 @@
       text-align: center;
     }
   
+    /* Перенос переносов строк (если в заголовке есть <br>) */
     .clusters br {
       display: block;
     }
   
+    /* На мобильных скрываем основной (десктопный) слайдер */
     .clusters .slider {
       display: none;
     }

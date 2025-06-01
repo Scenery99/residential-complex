@@ -1,5 +1,5 @@
 import './Bank.css';
-import bankLogos from '@/assets/Inteco/logos.png';
+import Logos from '@/assets/Inteco/logos.png';
 import Container from '../../../Container/Container';
 
 function Bank() {
@@ -10,7 +10,7 @@ function Bank() {
           Самые выгодные условия<br /> кредитования от 20 банков
         </h1>
         <div className="logos">
-          <img src={bankLogos} alt="logos" loading="lazy" />
+          <img src={Logos} alt="logos" loading="lazy" />
         </div>
       </section>
     </Container>

@@ -1,49 +1,48 @@
 .apartments {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.apartments h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative; /* чтобы .middleline позиционировался относительно h1 */
+}
+
+.apartments h1 .middleline {
+  position: absolute;
+  top: 105px;
+  left: 350px;
+  z-index: -1;
+}
+
+.apartments .miniline {
+  position: absolute;
+  top: 153px;
+  left: 230px;
+}
+
+/* Мобильные стили (до 768px) */
+@media (max-width: 768px) {
+  .apartments {
+    gap: 12px;
   }
-  
+
   .apartments h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    position: relative; /* чтобы middleline позиционировалась относительно h1 */
+    margin-bottom: 10px;
   }
-  
+
+  .apartments h1 br {
+    display: none;
+  }
+
   .apartments h1 .middleline {
-    position: absolute;
-    top: 105px;
-    left: 350px;
-    z-index: -1;
+    display: none;
   }
-  
+
   .apartments .miniline {
-    position: absolute;
-    top: 153px;
-    left: 230px;
+    display: none;
   }
-  
-  /* Мобильные стили (до 768px) */
-  @media (max-width: 768px) {
-    .apartments {
-      gap: 12px;
-    }
-  
-    .apartments h1 {
-      margin-bottom: 10px;
-    }
-  
-    .apartments h1 br {
-      display: none;
-    }
-  
-    .apartments h1 .middleline {
-      display: none;
-    }
-  
-    .apartments .miniline {
-      display: none;
-    }
-  }
-  
+}

@@ -1,32 +1,32 @@
 import './Clusters.css';
 import { useState, useEffect } from 'react';
-// import { motion, AnimatePresence } from 'framer-motion';
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
+// import { AnimatePresence } from 'framer-motion';
 import Container from '../../../Container/Container';
 import Button from '../../../Button/Button';
-import LogoBlue from '@/assets/clusters/blue-slide/blue-logo0.svg';
-import LogoGreen from '@/assets/clusters/green-slide/green-logo0.svg';
-import slide from '@/assets/clusters/blue-slide/blue-slide1.png';
-import slide2 from '@/assets/clusters/blue-slide/blue-slide2.png';
-import slide3 from '@/assets/clusters/blue-slide/blue-slide3.png';
-import slide4 from '@/assets/clusters/blue-slide/blue-slide4.png';
-import slide5 from '@/assets/clusters/blue-slide/blue-slide5.png';
-import slide6 from '@/assets/clusters/blue-slide/blue-slide6.png';
-import slide7 from '@/assets/clusters/blue-slide/blue-slide7.png';
-import slide8 from '@/assets/clusters/blue-slide/blue-slide8.png';
-import slide9 from '@/assets/clusters/blue-slide/blue-slide9.png';
-import slide10 from '@/assets/clusters/blue-slide/blue-slide10.png';
-import gslide from '@/assets/clusters/green-slide/green-slide1.png';
-import gslide2 from '@/assets/clusters/green-slide/green-slide2.png';
-import gslide3 from '@/assets/clusters/green-slide/green-slide3.png';
-import gslide4 from '@/assets/clusters/green-slide/green-slide4.png';
-import gslide5 from '@/assets/clusters/green-slide/green-slide5.png';
-import gslide6 from '@/assets/clusters/green-slide/green-slide6.png';
-import gslide7 from '@/assets/clusters/green-slide/green-slide7.png';
+import blueLogo from '@/assets/clusters/blue-slide/blue-logo0.svg';
+import greenLogo from '@/assets/clusters/green-slide/green-logo0.svg';
+import blueSlide1 from '@/assets/clusters/blue-slide/blue-slide1.png';
+import blueSlide2 from '@/assets/clusters/blue-slide/blue-slide2.png';
+import blueSlide3 from '@/assets/clusters/blue-slide/blue-slide3.png';
+import blueSlide4 from '@/assets/clusters/blue-slide/blue-slide4.png';
+import blueSlide5 from '@/assets/clusters/blue-slide/blue-slide5.png';
+import blueSlide6 from '@/assets/clusters/blue-slide/blue-slide6.png';
+import blueSlide7 from '@/assets/clusters/blue-slide/blue-slide7.png';
+import blueSlide8 from '@/assets/clusters/blue-slide/blue-slide8.png';
+import blueSlide9 from '@/assets/clusters/blue-slide/blue-slide9.png';
+import blueSlide10 from '@/assets/clusters/blue-slide/blue-slide10.png';
+import greenSlide1 from '@/assets/clusters/green-slide/green-slide1.png';
+import greenSlide2 from '@/assets/clusters/green-slide/green-slide2.png';
+import greenSlide3 from '@/assets/clusters/green-slide/green-slide3.png';
+import greenSlide4 from '@/assets/clusters/green-slide/green-slide4.png';
+import greenSlide5 from '@/assets/clusters/green-slide/green-slide5.png';
+import greenSlide6 from '@/assets/clusters/green-slide/green-slide6.png';
+import greenSlide7 from '@/assets/clusters/green-slide/green-slide7.png';
 import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import Modal from '../../../Modals/Modal';
-import BlueBook from '@/assets/modals/catalog1.png';
-import GreenBook from '@/assets/modals/catalog3.png';
+import Catalog1 from '@/assets/modals/catalog1.png';
+import Catalog2 from '@/assets/modals/catalog3.png';
 import Line from '@/assets/presentation/line.png';
 
 const MobileSlider = ({ 
@@ -164,26 +164,26 @@ const MobileSlider = ({
 
 function Clusters() {
   const blueClusterData = [
-    { image: slide, title: 'Корпуса кластера River Line на набережной Раменки' },
-    { image: slide2, title: 'Возле набережной места для прогулок и детские площадки' },
-    { image: slide3, title: 'Вид на корпуса сверху' },
-    { image: slide4, title: 'Можно провести вечер сидя на мостике около реки' },
-    { image: slide5, title: 'Детская площадка' },
-    { image: slide6, title: 'Река прямо у дома, в любой момент можно прогуляться' },
-    { image: slide7, title: 'Квартиры с панорамным видом на парк' },
-    { image: slide8, title: 'Корпуса кластера River Line на набережной Раменки' },
-    { image: slide9, title: 'Возле набережной места для прогулок и детские площадки' },
-    { image: slide10, title: 'Вид на корпуса сверху' },
+    { image: blueSlide1, title: 'Корпуса кластера River Line на набережной Раменки' },
+    { image: blueSlide2, title: 'Возле набережной места для прогулок и детские площадки' },
+    { image: blueSlide3, title: 'Вид на корпуса сверху' },
+    { image: blueSlide4, title: 'Можно провести вечер сидя на мостике около реки' },
+    { image: blueSlide5, title: 'Детская площадка' },
+    { image: blueSlide6, title: 'Река прямо у дома, в любой момент можно прогуляться' },
+    { image: blueSlide7, title: 'Квартиры с панорамным видом на парк' },
+    { image: blueSlide8, title: 'Корпуса кластера River Line на набережной Раменки' },
+    { image: blueSlide9, title: 'Возле набережной места для прогулок и детские площадки' },
+    { image: blueSlide10, title: 'Вид на корпуса сверху' },
   ];
 
   const greenClusterData = [
-    { image: gslide },
-    { image: gslide2 },
-    { image: gslide3 },
-    { image: gslide4 },
-    { image: gslide5 },
-    { image: gslide6 },
-    { image: gslide7 },
+    { image: greenSlide1 },
+    { image: greenSlide2 },
+    { image: greenSlide3 },
+    { image: greenSlide4 },
+    { image: greenSlide5 },
+    { image: greenSlide6 },
+    { image: greenSlide7 },
   ];
 
   const [currentBlueSlide, setCurrentBlueSlide] = useState(1);
@@ -244,7 +244,7 @@ function Clusters() {
     text: 'PDF, можно скачать прямо сейчас',
     backgroundImage: Line,
     backgroundColor: activeCluster === 'blue' ? '#1f2057ff' : '#a0a747ff',
-    foregroundImage: activeCluster === 'blue' ? BlueBook : GreenBook,
+    foregroundImage: activeCluster === 'blue' ? Catalog1 : Catalog2,
     showImages: true,
     onSubmit: handleSubmit,
     buttonText: 'Получить планировки',
@@ -253,7 +253,7 @@ function Clusters() {
   return (
     <section className="clusters">
       <Container>
-        <h1 className="clusters-title">
+        <h1 className="clusters__title">
           Жилой комплекс состоит <br /> из двух кластеров
         </h1>
       </Container>
@@ -265,7 +265,7 @@ function Clusters() {
               clusterData={blueClusterData}
               currentSlide={currentBlueSlide}
               setCurrentSlide={setCurrentBlueSlide}
-              logo={LogoBlue}
+              logo={blueLogo}
               title="River Line"
               description="Восемь жилых корпусов по 12-14 этажей выстроены вдоль реки Раменки"
               onOpenModal={() => openModal('blue')}
@@ -277,7 +277,7 @@ function Clusters() {
               clusterData={greenClusterData}
               currentSlide={currentGreenSlide}
               setCurrentSlide={setCurrentGreenSlide}
-              logo={LogoGreen}
+              logo={greenLogo}
               title="River Line"
               description="Семь 14-этажных жилых корпусов, расположенных вдоль Матвеевского леса"
               onOpenModal={() => openModal('green')}
@@ -292,7 +292,7 @@ function Clusters() {
                 <div className="slider-text">
                   <div className="subslider">
                     <h1>River Line</h1>
-                    <img src={LogoBlue} alt="Логотип кластера 1" className="slider-logo" />
+                    <img src={blueLogo} alt="Логотип кластера 1" className="slider-logo" />
                   </div>
                   <p>Восемь жилых корпусов по 12-14 этажей выстроены вдоль реки Раменки</p>
                 </div>
@@ -330,7 +330,7 @@ function Clusters() {
                 <div className="slider-text">
                   <div className="subslider">
                     <h1>River Line</h1>
-                    <img src={LogoGreen} alt="Логотип кластера 2" className="slider-logo" />
+                    <img src={greenLogo} alt="Логотип кластера 2" className="slider-logo" />
                   </div>
                   <p>Семь 14-этажных жилых корпусов, расположенных вдоль Матвеевского леса</p>
                 </div>

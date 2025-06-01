@@ -1,13 +1,13 @@
-import Presentation from './Presentation/Present';
+import Presentation from './Presentation/Presentation';
 import Clusters from './Clusters/Clusters';
-import Estetic from './Estetic/Estetic';
+import Aesthetics from './Aesthetics/Aesthetics';
 
 function About() {
   return (
     <>
     <Presentation />
     <Clusters />
-    <Estetic />
+    <Aesthetics />
     </>
   );
 }

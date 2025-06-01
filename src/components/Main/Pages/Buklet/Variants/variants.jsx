@@ -62,16 +62,16 @@ function Variants() {
                     />
                     </div>
                 </div>
-                <div class="grid">
-                <div class="div1"> </div>
-                <div class="div2"> <img src={Lightone} alt="photo" /></div>
-                <div class="div3">
+                <div className="grid">
+                <div className="div1"> </div>
+                <div className="div2"> <img src={Lightone} alt="photo" /></div>
+                <div className="div3">
                      <img src={Group} alt="photo" />
                      <span>ОСОБЕННОСТИ ИНТЕРЬЕРА</span>
                      <p>Сочетание белых стен и светлой <br /> напольной доски с текстурой дерева <br /> расширяет пространство, формируя <br />гармоничную, наполненную светом <br />атмосферу</p>
                      </div>
-                <div class="div4"> <img src={Lighttwo} alt="photo" /></div>
-                <div class="div5"> <img src={Lightthree} alt="photo" /></div>
+                <div className="div4"> <img src={Lighttwo} alt="photo" /></div>
+                <div className="div5"> <img src={Lightthree} alt="photo" /></div>
                 </div>
                 <hr className='line'/>
                 <div className='maintitle'>
@@ -84,17 +84,17 @@ function Variants() {
                     />
                     </div>
                 </div>
-                <div class="grid">
-                <div class="div1"> </div>
-                <div class="div2"> <img src={Darkone} alt="photo" /></div>
-                <div class="div3 dark">
+                <div className="grid">
+                <div className="div1"> </div>
+                <div className="div2"> <img src={Darkone} alt="photo" /></div>
+                <div className="div3 dark">
                      <img src={DarkGroup} alt="photo" />
                      <span>ОСОБЕННОСТИ ИНТЕРЬЕРА</span>
                      <p>Отделка в тёмном варианте <br /> формируется за счет нейтральных <br /> оттенков стен, а также напольной <br />доски, выполненной в цвете <br />темного дерева
                      </p>
                      </div>
-                <div class="div4"> <img src={Darktwo} alt="photo" /></div>
-                <div class="div5"> <img src={Darkthree} alt="photo" /></div>
+                <div className="div4"> <img src={Darktwo} alt="photo" /></div>
+                <div className="div5"> <img src={Darkthree} alt="photo" /></div>
                 </div>
 
                 <Modal {...modalProps} />

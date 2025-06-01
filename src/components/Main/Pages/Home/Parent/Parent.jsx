@@ -2,20 +2,20 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './Parent.css';
 import PhotoCard from '../../../PhotoCard/PhotoCard';
-import photo1 from '@/assets/grid/grid1.png';
-import photo2 from '@/assets/grid/grid2.png';
-import photo3 from '@/assets/grid/grid3.png';
-import photo4 from '@/assets/grid/grid4.png';
+import grid1 from '@/assets/grid/grid1.png';
+import grid2 from '@/assets/grid/grid2.png';
+import grid3 from '@/assets/grid/grid3.png';
+import grid4 from '@/assets/grid/grid4.png';
 import Container from '../../../Container/Container';
 import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import { useSwipeable } from 'react-swipeable';
 
 function Parent() {
   const photoData = [
-    { image: photo1, title: '20 гектаров', description: 'территории ЖК — это как полтора Зарядья' },
-    { image: photo2, title: '15 корпусов', description: 'по 12-14 этажей, просторная застройка' },
-    { image: photo3, title: '7 гектаров', description: 'приватного парка для жителей ЖК' },
-    { image: photo4, title: '2 километра', description: 'набережной реки Раменка вдоль ЖК' },
+    { image: grid1, title: '20 гектаров', description: 'территории ЖК — это как полтора Зарядья' },
+    { image: grid2, title: '15 корпусов', description: 'по 12-14 этажей, просторная застройка' },
+    { image: grid3, title: '7 гектаров', description: 'приватного парка для жителей ЖК' },
+    { image: grid4, title: '2 километра', description: 'набережной реки Раменка вдоль ЖК' },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -1,110 +1,109 @@
 .IntecoDiv {
-    background-repeat: no-repeat;
-    background-size: auto 760px;
-    min-height: 760px;
-    border-radius: 12px;
-    margin: 80px 0 60px;
-    display: flex;
-    justify-content: space-around;
-    color: #ffffff;
-    gap: 280px;
-    padding: 60px 0 0 0;
+  background-repeat: no-repeat;
+  background-size: auto 760px;
+  min-height: 760px;
+  border-radius: 12px;
+  margin: 80px 0 60px;
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+  gap: 280px;
+  padding: 60px 0 0 0;
+}
+
+.IntecoDiv .left {
+  width: 330px;
+}
+
+.IntecoDiv .left h1 {
+  font-size: 48px;
+  letter-spacing: -4%;
+}
+
+.IntecoDiv .left p:nth-child(2) {
+  margin: 16px 0 80px;
+  opacity: 1;
+}
+
+.IntecoDiv .left h6 {
+  font-family: "TT Travels", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 32px;
+  letter-spacing: -2%;
+}
+
+.IntecoDiv .left p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -1%;
+  margin: 2px 0 26px;
+  opacity: 0.8;
+}
+
+.IntecoDiv .right li {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-top: 8px;
+}
+
+.IntecoDiv .right li span {
+  border-bottom: 1px solid #ffffff79;
+}
+
+.IntecoDiv .right li:first-child {
+  font-weight: 400;
+}
+
+.IntecoDiv .right li:first-child span {
+  border-bottom: none;
+}
+
+/* Мобильная адаптация (до 768px) */
+@media (max-width: 768px) {
+  .IntecoDiv {
+    flex-direction: column;
+    padding: 10px;
+    margin: 40px 0 30px;
+    min-height: auto;
+    background-size: auto 400px;
+    background-position: center top;
+    border-radius: 8px;
   }
-  
+
   .IntecoDiv .left {
-    width: 330px;
+    width: 100%;
+    text-align: start;
   }
-  
+
   .IntecoDiv .left h1 {
-    font-size: 48px;
-    letter-spacing: -4%;
-  }
-  
-  .IntecoDiv .left p:nth-child(2) {
-    margin: 16px 0 80px;
-    opacity: 1;
-  }
-  
-  .IntecoDiv .left h6 {
-    font-family: 'TT Travels', sans-serif;
-    font-weight: 500;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 28px;
     letter-spacing: -2%;
   }
-  
-  .IntecoDiv .left p {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: -1%;
-    margin: 2px 0 26px;
-    opacity: 0.8;
-  }
-  
-  .IntecoDiv .right li {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: 300;
+
+  .IntecoDiv .left p:nth-child(2) {
+    margin: 10px 0 40px;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: 0%;
-    margin-top: 8px;
   }
-  
-  .IntecoDiv .right li span {
-    border-bottom: 1px solid #ffffff79;
+
+  .IntecoDiv .left h6 {
+    font-size: 20px;
+    line-height: 24px;
   }
-  
-  .IntecoDiv .right li:first-child {
-    font-weight: 400;
+
+  .IntecoDiv .left p {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 2px 0 20px;
   }
-  
-  .IntecoDiv .right li:first-child span {
-    border-bottom: none;
+
+  .IntecoDiv .right {
+    display: none;
   }
-  
-  /* Адаптация для мобильных устройств (до 768px) */
-  @media (max-width: 768px) {
-    .IntecoDiv {
-      flex-direction: column;
-      padding: 10px;
-      margin: 40px 0 30px;
-      min-height: auto;
-      background-size: auto 400px;
-      background-position: center top;
-      border-radius: 8px;
-    }
-  
-    .IntecoDiv .left {
-      width: 100%;
-      text-align: start;
-    }
-  
-    .IntecoDiv .left h1 {
-      font-size: 28px;
-      letter-spacing: -2%;
-    }
-  
-    .IntecoDiv .left p:nth-child(2) {
-      margin: 10px 0 40px;
-      font-size: 16px;
-      line-height: 20px;
-    }
-  
-    .IntecoDiv .left h6 {
-      font-size: 20px;
-      line-height: 24px;
-    }
-  
-    .IntecoDiv .left p {
-      font-size: 14px;
-      line-height: 18px;
-      margin: 2px 0 20px;
-    }
-  
-    .IntecoDiv .right {
-      display: none;
-    }
-  }
-  
+}

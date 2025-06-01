@@ -1,25 +1,25 @@
 import './Greeting.css';
-import Logo2 from '@/assets/landing/logo-west.svg';
-import mainLand from '@/assets/landing/main-landing.png';
-import mobilePhoto from '@/assets/landing/mobileLanding.png';
+import logoWest from '@/assets/landing/logo-west.svg';
+import mainLanding from '@/assets/landing/main-landing.png';
+import mobileLanding from '@/assets/landing/mobileLanding.png';
 import award from '@/assets/landing/award.svg';
-import mainLine from '@/assets/lines/line1.svg';
+import line1 from '@/assets/lines/line1.svg';
 
 function Greeting() {
   return (
     <section className="greeting">
-      <div className="maintitle">
-        <img src={Logo2} alt="landinglogo" className="logotwo" />
+      <div className="mainTitle">
+        <img src={logoWest} alt="landinglogo" className="logotwo" />
         <h1>
           Жизнь в зеленом оазисе <br /> в статусном районе Москвы
         </h1>
         <p>Жилой комплекс бизнес-класса в 20 минутах от Кремля</p>
-        <img src={mainLine} alt="line" className="mainline" />
+        <img src={line1} alt="line" className="line1" />
       </div>
-      <div className="mainland">
+      <div className="mainLand">
         <picture>
-          <source media="(max-width: 768px)" srcSet={mobilePhoto} />
-          <img src={mainLand} alt="mainPhoto" loading="lazy" />
+          <source media="(max-width: 768px)" srcSet={mobileLanding} />
+          <img src={mainLanding} alt="mainPhoto" loading="lazy" />
         </picture>
         <div className="award-div">
           <img src={award} alt="award-icon" />
@@ -28,12 +28,12 @@ function Greeting() {
         <div className="when">
           <div>
             <p>
-              1 очередь <span>2022</span>
+              1 очередь <span>2024</span>
             </p>
           </div>
           <div>
             <p>
-              2 очередь <span>2023</span>
+              2 очередь <span>2026</span>
             </p>
           </div>
         </div>

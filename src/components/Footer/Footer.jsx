@@ -1,46 +1,69 @@
-import Container from '../Main/Container/Container';
+import React from 'react';
+import Container from '../Main/Container/Container'; 
 import './Footer.css';
-import FooterLogo from '@/assets/landing/footer-logo.svg';
-import Logo2 from '@/assets/landing/logo-west.svg';
-import logo3 from '@/assets/landing/experts.svg';
+import FooterLogo from '@/assets/landing/footer__logo.svg';
+import LogoWest from '@/assets/landing/logo-west.svg';
+import ExpertsLogo from '@/assets/landing/experts.svg';
 
 function Footer() {
   return (
-    <section className="footer">
+    <footer className="footer">
       <Container>
-        <div className="garden">
-          <h3>
-            Жилой комплекс «West Garden» — <br />все преимущества жизни на природе
+        <div className="footer__intro">
+          <h3 className="footer__title">
+            Жилой комплекс «West Garden» —<br />
+            все преимущества жизни на природе
           </h3>
-          <img className='logo2' src={Logo2} alt="logo2" loading="lazy" />
+          <img
+            className="footer__logo-west"
+            src={LogoWest}
+            alt="West Garden Logo"
+            loading="lazy"
+          />
         </div>
-        <hr />
-        <div className="footer-bottom">
-          <div className="office">
-            <div className="office-logos">
-              <img src={FooterLogo} alt="logo" loading="lazy" />
-              <p>|</p>
-              <img src={logo3} alt="logo3" loading="lazy" />
+
+        <hr className="footer__divider" />
+
+        <div className="footer__bottom">
+          <div className="footer__office">
+            <div className="footer__office-logos">
+              <img
+                className="footer__office-logo"
+                src={FooterLogo}
+                alt="Sales Office Logo"
+                loading="lazy"
+              />
+              <span className="footer__separator">|</span>
+              <img
+                className="footer__office-logo"
+                src={ExpertsLogo}
+                alt="Experts Logo"
+                loading="lazy"
+              />
             </div>
-            <hr />
-            <div className="office-address">
-              <p>Офис продаж</p>
-              <p>
-                Москва, Локал наб. 2/4, <br /> строение 17, офис 308
+
+            <hr className="footer__subdivider" />
+
+            <div className="footer__office-address">
+              <p className="footer__office-label">Офис продаж</p>
+              <p className="footer__office-details">
+                Москва, Локал наб. 2/4,<br />строение 17, офис 308
               </p>
             </div>
-            <hr />
-            <div className="office-phone">
-              <p>Телефон</p>
-              <div>
-                <p>+7 495 805 19 34 </p>
-                <span>· работаем</span>
+
+            <hr className="footer__subdivider" />
+
+            <div className="footer__office-phone">
+              <p className="footer__office-label">Телефон</p>
+              <div className="footer__phone-info">
+                <p className="footer__phone-number">+7 999 700 70 70</p>
+                <span className="footer__phone-status">· работаем</span>
               </div>
             </div>
           </div>
         </div>
       </Container>
-    </section>
+    </footer>
   );
 }
 

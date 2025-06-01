@@ -1,12 +1,13 @@
+/* Основной контейнер */
 .container {
-    width: 1180px;
-    margin: 0 auto;
+  width: 1180px;
+  margin: 0 auto;
+}
+
+/* Адаптация для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0 1px;
   }
-  
-  @media (max-width: 768px) {
-    .container {
-      width: 100%;
-      margin: 0 1px;
-    }
-  }
-  
+}
