@@ -6,7 +6,7 @@ import award from '@/assets/landing/award.svg';
 import line1 from '@/assets/lines/line1.svg';
 
 function Greeting() {
-  return (
+  return ( 
     <section className="greeting">
       <div className="mainTitle">
         <img src={logoWest} alt="landinglogo" className="logotwo" />
@@ -23,7 +23,7 @@ function Greeting() {
         </picture>
         <div className="award-div">
           <img src={award} alt="award-icon" />
-          <p>Победитель федеральной премии Urban Awards 2019</p>
+          <p>Победитель федеральной премии Urban Awards 2020</p>
         </div>
         <div className="when">
           <div>

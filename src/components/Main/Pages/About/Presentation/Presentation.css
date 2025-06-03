@@ -32,7 +32,7 @@
 }
 
 .presentation .right .person p {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -63,7 +63,7 @@
 }
 
 .presentation .left p {
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 20px;
   font-weight: 300;
   line-height: 26px;
@@ -96,7 +96,7 @@
   border: none;
   border-radius: 12px;
   background-color: #F5F3F0;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 16px;
   color: var(--color-text-primary);
   width: 250px;
@@ -118,7 +118,7 @@
   top: -15px;
   left: 0;
   color: #ff0000;
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 14px;
@@ -150,7 +150,6 @@
   margin-top: 28px;
 }
 
-/* Мобильная адаптация (до 768px) */
 @media (max-width: 768px) {
   .presentation {
     flex-direction: column;

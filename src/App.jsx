@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="navbar-placeholder"></div> {/* Добавляем отступ */}
+      <div className="navbar-placeholder"></div> 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

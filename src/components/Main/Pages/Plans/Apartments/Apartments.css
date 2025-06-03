@@ -8,17 +8,17 @@
 .apartments h1 {
   text-align: center;
   margin-bottom: 40px;
-  position: relative; /* чтобы .middleline позиционировался относительно h1 */
+  position: relative; /* чтобы .line4  позиционировался относительно h1 */
 }
 
-.apartments h1 .middleline {
+.apartments h1 .line4 {
   position: absolute;
   top: 105px;
   left: 350px;
   z-index: -1;
 }
 
-.apartments .miniline {
+.apartments .line5 {
   position: absolute;
   top: 153px;
   left: 230px;
@@ -38,11 +38,11 @@
     display: none;
   }
 
-  .apartments h1 .middleline {
+  .apartments h1 .line4 {
     display: none;
   }
 
-  .apartments .miniline {
+  .apartments .line5 {
     display: none;
   }
 }

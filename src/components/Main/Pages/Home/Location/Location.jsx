@@ -21,7 +21,7 @@ function Location() {
         </div>
         <h1>
           Один из самых зелёных <br /> районов столицы — Раменки{' '}
-          <img src={line2} alt="line" className="littleline" loading="lazy" />
+          <img src={line2} alt="line" className="line2" loading="lazy" />
         </h1>
         <img src={Map360} alt="карта" loading="lazy" />
         <div className="garden">

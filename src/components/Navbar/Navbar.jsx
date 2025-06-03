@@ -58,7 +58,7 @@ function Navbar() {
         </AnimatePresence>
       </div>
       <div className="navbar__phone">
-        <a href="tel:+7 495 845 19 34">+7 495 845 19 34</a>
+        <a href="tel:+7 495 845 19 34">+7 999 700 70 70</a>
         <hr />
         <p>· работаем</p>
       </div>

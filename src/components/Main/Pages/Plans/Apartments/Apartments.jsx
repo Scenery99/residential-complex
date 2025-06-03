@@ -104,7 +104,7 @@ function Apartments() {
           text="Оставьте номер телефона, чтобы получить подробную информацию о стоимости"
           showImages={false}
           rightPadding="20px 30px"
-          rightBackgroundColor="#fff"
+          rightBackgroundColor="#FFF"
           rightAlign="center"
           rightTextAlign="center"
           formGap="5px"

@@ -38,7 +38,7 @@
   position: relative;
 }
 
-.location h1 .littleline {
+.location h1 .line2 {
   position: absolute;
   top: 110px;
   left: 560px;
@@ -156,7 +156,7 @@
     margin: 25px 0 20px;
   }
 
-  .location h1 .littleline {
+  .location h1 .line2 {
     top: 46px;
     left: 66%;
     transform: translateX(-50%);

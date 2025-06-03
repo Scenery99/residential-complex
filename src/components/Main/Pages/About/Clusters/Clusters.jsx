@@ -164,16 +164,16 @@ const MobileSlider = ({
 
 function Clusters() {
   const blueClusterData = [
-    { image: blueSlide1, title: 'Корпуса кластера River Line на набережной Раменки' },
-    { image: blueSlide2, title: 'Возле набережной места для прогулок и детские площадки' },
-    { image: blueSlide3, title: 'Вид на корпуса сверху' },
-    { image: blueSlide4, title: 'Можно провести вечер сидя на мостике около реки' },
-    { image: blueSlide5, title: 'Детская площадка' },
-    { image: blueSlide6, title: 'Река прямо у дома, в любой момент можно прогуляться' },
-    { image: blueSlide7, title: 'Квартиры с панорамным видом на парк' },
-    { image: blueSlide8, title: 'Корпуса кластера River Line на набережной Раменки' },
-    { image: blueSlide9, title: 'Возле набережной места для прогулок и детские площадки' },
-    { image: blueSlide10, title: 'Вид на корпуса сверху' },
+    { image: blueSlide1, title: 'Корпуса кластера River Line на набережной Раменки.' },
+    { image: blueSlide2, title: 'Возле набережной места для прогулок и детские площадки.' },
+    { image: blueSlide3, title: 'Вид на корпуса сверху.' },
+    { image: blueSlide4, title: 'Можно провести вечер сидя на мостике около реки.' },
+    { image: blueSlide5, title: 'Детская площадка.' },
+    { image: blueSlide6, title: 'Река прямо у дома, в любой момент можно прогуляться.' },
+    { image: blueSlide7, title: 'Квартиры с панорамным видом на парк.' },
+    { image: blueSlide8, title: 'Корпуса кластера River Line на набережной Раменки.' },
+    { image: blueSlide9, title: 'Возле набережной места для прогулок и детские площадки.' },
+    { image: blueSlide10, title: 'Вид на корпуса сверху.' },
   ];
 
   const greenClusterData = [
@@ -240,8 +240,8 @@ function Clusters() {
       setIsModalOpen(false);
       setActiveCluster(null);
     },
-    title: 'Получите подробное описание и цены на свободные планировки в кластере River Line',
-    text: 'PDF, можно скачать прямо сейчас',
+    title: 'Получите подробное описание и цены на свободные планировки в кластере River Line.',
+    text: 'PDF, можно скачать прямо сейчас.',
     backgroundImage: Line,
     backgroundColor: activeCluster === 'blue' ? '#1f2057ff' : '#a0a747ff',
     foregroundImage: activeCluster === 'blue' ? Catalog1 : Catalog2,
@@ -267,7 +267,7 @@ function Clusters() {
               setCurrentSlide={setCurrentBlueSlide}
               logo={blueLogo}
               title="River Line"
-              description="Восемь жилых корпусов по 12-14 этажей выстроены вдоль реки Раменки"
+              description="Восемь жилых корпусов по 12-14 этажей выстроены вдоль реки Раменки."
               onOpenModal={() => openModal('blue')}
             />
           </div>
@@ -279,7 +279,7 @@ function Clusters() {
               setCurrentSlide={setCurrentGreenSlide}
               logo={greenLogo}
               title="River Line"
-              description="Семь 14-этажных жилых корпусов, расположенных вдоль Матвеевского леса"
+              description="Семь 14-этажных жилых корпусов, расположенных вдоль Матвеевского леса."
               onOpenModal={() => openModal('green')}
             />
           </div>
@@ -294,7 +294,7 @@ function Clusters() {
                     <h1>River Line</h1>
                     <img src={blueLogo} alt="Логотип кластера 1" className="slider-logo" />
                   </div>
-                  <p>Восемь жилых корпусов по 12-14 этажей выстроены вдоль реки Раменки</p>
+                  <p>Восемь жилых корпусов по 12-14 этажей выстроены вдоль реки Раменки.</p>
                 </div>
                 <Button text="Посмотреть планировки" color="white" onClick={() => openModal('blue')} />
               </div>
@@ -332,7 +332,7 @@ function Clusters() {
                     <h1>River Line</h1>
                     <img src={greenLogo} alt="Логотип кластера 2" className="slider-logo" />
                   </div>
-                  <p>Семь 14-этажных жилых корпусов, расположенных вдоль Матвеевского леса</p>
+                  <p>Семь 14-этажных жилых корпусов, расположенных вдоль Матвеевского леса.</p>
                 </div>
                 <Button text="Посмотреть планировки" color="white" onClick={() => openModal('green')} />
               </div>

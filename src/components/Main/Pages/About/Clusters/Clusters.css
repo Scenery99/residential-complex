@@ -1,355 +1,306 @@
-/* ==============================
-   Секция .clusters
-   ============================== */
-   .clusters {
-    width: 100%;
-    padding: 50px 0;
-    margin: 60px 0 0 0;
+.clusters {
+  width: 100%;
+  padding: 50px 0;
+  margin: 60px 0 0 0;
+}
+
+.clusters .clusters-title {
+  font-family: "TT Travels", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  margin: 20px 0 40px 450px;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+.clusters .slider {
+  width: 100%;
+  padding: 80px 0;
+  position: relative;
+}
+
+.clusters .slider.slider-blue {
+  background-color: var(--color-brand-blue);
+}
+
+.clusters .slider.slider-green {
+  background-color: var(--color-brand-green);
+}
+
+.clusters .slider .slider-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.clusters .slider .slider-content .slider-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.clusters .slider .slider-content .slider-text .subslider {
+  display: flex;
+  gap: 20px;
+}
+
+.clusters .slider .slider-content .slider-text .slider-logo {
+  width: 50px;
+  height: auto;
+}
+
+.clusters .slider .slider-content .slider-text h1 {
+  color: #fff;
+  line-height: 56px;
+}
+
+.clusters .slider .slider-content .slider-text p {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  max-width: 400px;
+}
+
+/* Контейнер с фотографиями слайдера */
+.clusters .slider .slider-photos {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clusters .slider .slider__content {
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.clusters .slider .slider__wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.clusters .slider .slider__item {
+  position: relative;
+  flex: 0 0 1180px;
+  height: 580px;
+}
+
+.clusters .slider .slider__image {
+  width: 1180px;
+  height: 580px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.clusters .slider .slider__title {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+}
+
+.clusters .slider .slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clusters .slider .slider__arrow--left {
+  left: 20px;
+}
+
+.clusters .slider .slider__arrow--right {
+  right: 20px;
+}
+
+.clusters .slider .slider__arrow:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.clusters .slider .slider__arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+.clusters .mobile-cluster {
+  padding: 15px 4px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.clusters .mobile-cluster--blue {
+  background-color: var(--color-brand-blue);
+}
+
+.clusters .mobile-cluster--green {
+  background-color: var(--color-brand-green);
+}
+
+/* Мобильный слайдер */
+.clusters .mobile-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  padding: 4px;
+}
+
+.clusters .mobile-slider__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 4px;
+}
+
+.clusters .mobile-slider__logo {
+  width: 40px;
+  height: auto;
+}
+
+.clusters .mobile-slider__description {
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 0 4px;
+}
+
+.clusters .mobile-slider__content {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.clusters .mobile-slider__slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.clusters .mobile-slider__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.clusters .mobile-slider__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  font-family: "Helvetica", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
+.clusters .mobile-slider__controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 4px;
+}
+
+.clusters .mobile-slider__arrow {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  touch-action: manipulation;
+}
+
+.clusters .mobile-slider__arrow:active {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.clusters .mobile-slider__arrow svg {
+  width: 20px;
+  height: 20px;
+}
+
+.clusters .mobile-slider__dots {
+  display: flex;
+  gap: 8px;
+}
+
+.clusters .mobile-slider__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  transition: background 0.2s ease;
+}
+
+.clusters .mobile-slider__dot.active {
+  background: white;
+}
+
+.clusters .mobile-slider__dot:active {
+  transform: scale(1.1);
+}
+
+.clusters .mobile-slider__button {
+  width: calc(100% - 8px);
+  margin: 10px 4px 0;
+}
+
+@media (max-width: 768px) {
+  .clusters {
+    padding: 30px 0;
+    margin: 30px 0 0 0;
   }
-  
+
   .clusters .clusters-title {
-    font-family: "TT Travels", sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 100%;
-    margin: 20px 0 40px 450px;
-    color: var(--color-text-primary);
+    font-size: 28px;
+    margin: 0 0 30px 0;
     text-align: center;
   }
-  
-  /* Слайдер (дексктопная версия) */
+
+  .clusters br {
+    display: block;
+  }
+
   .clusters .slider {
-    width: 100%;
-    padding: 80px 0;
-    position: relative;
+    display: none;
   }
-  
-  /* Цветовые модификаторы */
-  .clusters .slider.slider-blue {
-    background-color: var(--color-brand-blue);
-  }
-  
-  .clusters .slider.slider-green {
-    background-color: var(--color-brand-green);
-  }
-  
-  /* Внутренний контент слайдера */
-  .clusters .slider .slider-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 30px;
-  }
-  
-  /* Блок с текстом внутри слайдера */
-  .clusters .slider .slider-content .slider-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  /* Если внутри .slider-text есть подслайдер */
-  .clusters .slider .slider-content .slider-text .subslider {
-    display: flex;
-    gap: 20px;
-  }
-  
-  /* Логотип внутри текстового блока */
-  .clusters .slider .slider-content .slider-text .slider-logo {
-    width: 50px;
-    height: auto;
-  }
-  
-  /* Заголовок внутри .slider-text */
-  .clusters .slider .slider-content .slider-text h1 {
-    color: #fff;
-    line-height: 56px;
-  }
-  
-  /* Описание внутри .slider-text */
-  .clusters .slider .slider-content .slider-text p {
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 26px;
-    letter-spacing: 0.2px;
-    color: #fff;
-    max-width: 400px;
-  }
-  
-  /* Контейнер с фотографиями слайдера */
-  .clusters .slider .slider-photos {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Обёртка, в которой “листаются” слайды */
-  .clusters .slider .slider__content {
-    width: 100%;
-    height: 580px;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-  
-  /* Непосредственно ряд элементов-слайдов */
-  .clusters .slider .slider__wrapper {
-    display: flex;
-    gap: 20px;
-  }
-  
-  /* Один слайд */
-  .clusters .slider .slider__item {
-    position: relative;
-    flex: 0 0 1180px;
-    height: 580px;
-  }
-  
-  /* Изображение внутри одного слайда */
-  .clusters .slider .slider__image {
-    width: 1180px;
-    height: 580px;
-    border-radius: 5px;
-    object-fit: cover;
-  }
-  
-  /* Название поверх картинки внизу */
-  .clusters .slider .slider__title {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    color: #fff;
-  }
-  
-  /* Стрелки навигации слайдера */
-  .clusters .slider .slider__arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Левая стрелка */
-  .clusters .slider .slider__arrow--left {
-    left: 20px;
-  }
-  
-  /* Правая стрелка */
-  .clusters .slider .slider__arrow--right {
-    right: 20px;
-  }
-  
-  /* Ховер-эффект для стрелок */
-  .clusters .slider .slider__arrow:hover {
-    background: rgba(0, 0, 0, 0.9);
-  }
-  
-  /* Размер SVG внутри стрелок */
-  .clusters .slider .slider__arrow svg {
-    width: 24px;
-    height: 24px;
-  }
-  
-  
-  /* ==============================
-     .mobile-cluster (альтернативный вариант для мобильных “кластеров”)
-     ============================== */
-  .clusters .mobile-cluster {
-    padding: 15px 4px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  /* Цветовые модификаторы для мобильного кластера */
-  .clusters .mobile-cluster--blue {
-    background-color: var(--color-brand-blue);
-  }
-  
-  .clusters .mobile-cluster--green {
-    background-color: var(--color-brand-green);
-  }
-  
-  
-  /* ==============================
-     .mobile-slider (мобильная версия основного слайдера)
-     ============================== */
-  .clusters .mobile-slider {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    color: white;
-    padding: 4px;
-  }
-  
-  /* Заголовок/шапка мобильного слайдера */
-  .clusters .mobile-slider__header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 0 4px;
-  }
-  
-  /* Логотип в шапке мобильного слайдера */
-  .clusters .mobile-slider__logo {
-    width: 40px;
-    height: auto;
-  }
-  
-  /* Описание под логотипом (моб.) */
-  .clusters .mobile-slider__description {
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.4;
-    padding: 0 4px;
-  }
-  
-  /* Контейнер для “раскрытия” кадра мобильного слайда */
-  .clusters .mobile-slider__content {
-    position: relative;
-    width: 100%;
-    height: 300px;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  /* Один абсолютный блок слайда (чтобы накладывались) */
-  .clusters .mobile-slider__slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  
-  /* Картинка внутри мобильного слайда */
-  .clusters .mobile-slider__image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    user-select: none;
-  }
-  
-  /* Текст название внизу картинки (моб.) */
-  .clusters .mobile-slider__title {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.7);
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    margin: 0;
-  }
-  
-  /* Блок управления (стрелки и точки) внизу (моб.) */
-  .clusters .mobile-slider__controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    padding: 0 4px;
-  }
-  
-  /* Стрелка управления (моб.) */
-  .clusters .mobile-slider__arrow {
-    background: rgba(255, 255, 255, 0.2);
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    cursor: pointer;
-    transition: background 0.2s ease;
-    touch-action: manipulation;
-  }
-  
-  .clusters .mobile-slider__arrow:active {
-    background: rgba(255, 255, 255, 0.4);
-  }
-  
-  .clusters .mobile-slider__arrow svg {
-    width: 20px;
-    height: 20px;
-  }
-  
-  /* Точки-пагинация (моб.) */
-  .clusters .mobile-slider__dots {
-    display: flex;
-    gap: 8px;
-  }
-  
-  /* Одна “точка” */
-  .clusters .mobile-slider__dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    transition: background 0.2s ease;
-  }
-  
-  /* Активная точка */
-  .clusters .mobile-slider__dot.active {
-    background: white;
-  }
-  
-  .clusters .mobile-slider__dot:active {
-    transform: scale(1.1);
-  }
-  
-  /* Кнопка внизу (моб.) */
-  .clusters .mobile-slider__button {
-    width: calc(100% - 8px);
-    margin: 10px 4px 0;
-  }
-  
-  
-  /* ==============================
-     Мобильная версия секции “clusters” (до 768px)
-     ============================== */
-  @media (max-width: 768px) {
-    .clusters {
-      padding: 30px 0;
-      margin: 30px 0 0 0;
-    }
-  
-    .clusters .clusters-title {
-      font-size: 28px;
-      margin: 0 0 30px 0;
-      text-align: center;
-    }
-  
-    /* Перенос переносов строк (если в заголовке есть <br>) */
-    .clusters br {
-      display: block;
-    }
-  
-    /* На мобильных скрываем основной (десктопный) слайдер */
-    .clusters .slider {
-      display: none;
-    }
-  }
-  
+}

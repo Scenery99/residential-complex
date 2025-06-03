@@ -4,16 +4,16 @@ import Container from '../../../Container/Container';
 import cardone from '@/assets/buklet/ready-made-design1.png';
 import cardtwo from '@/assets/buklet/ready-made-design2.png';
 import cardthree from '@/assets/buklet/ready-made-design3.png';
-import Longline from "@/assets/lines/line3.svg"
+import line3 from "@/assets/lines/line3.svg"
 
 function Finish() {
     return (
         <Container>
           <section className='finish'>
-                <div className='maintitle'>
+                <div className='mainTitle'>
                 <h1>Отделка от застройщика</h1>
                 <p>Экономьте на стоимости ремонта, покупая квартиру с готовой отделкой</p>
-                <img className='longline' src={Longline} alt="line" />
+                <img className='line3' src={line3} alt="line3" />
                 </div>
                 <div className='cards'>
                 <PhotoCard

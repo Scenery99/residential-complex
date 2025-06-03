@@ -1,8 +1,9 @@
 :root {
   /* Цвета, аналогичные оригинальному сайту */
   --color-text-primary: #333333;
-  --color-line-primary: #e0e0e0;
+  --color-line-primary: #E0E0E0;
   --color-brand-brown: #8B4513;
+  --color-white: #FFFFFF;
 }
 
 /* Базовый стиль для всех кнопок */
@@ -20,38 +21,32 @@
   transition: background-color 0.3s ease;
 }
 
-/* Вариант белой кнопки */
 .custom-button.white {
-  background-color: #ffffff;
+  background-color: var(--color-white);
   color: var(--color-text-primary);
   border: 1px solid var(--color-line-primary);
 }
 
-/* Вариант коричневой кнопки */
 .custom-button.brown {
   background-color: var(--color-brand-brown);
-  color: #ffffff;
+  color: var(--color-white);;
 }
 
-/* Вариант черной кнопки */
 .custom-button.black {
   background-color: var(--color-text-primary);
-  color: #ffffff;
+  color: var(--color-white);;
   width: fit-content;
   align-self: center;
 }
 
-/* Кнопка на всю ширину */
 .custom-button.full-width {
   width: 100%;
 }
 
-/* Эффект при наведении */
 .custom-button:hover {
   opacity: 0.9;
 }
 
-/* Адаптация для мобильных устройств (до 768px) */
 @media (max-width: 768px) {
   .custom-button {
     padding: 10px 16px;
@@ -65,7 +60,6 @@
   }
 }
 
-/* Десктопная версия (от 769px и выше) */
 @media (min-width: 769px) {
   .custom-button.full-width {
     width: 410px;

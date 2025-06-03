@@ -1,21 +1,21 @@
 /* Подключение Helvetica Neue */
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('/src/fonts/Helvetica/HelveticaNeueLight.otf') format('opentype');
+  font-family: 'Helvetica';
+  src: url('/src/fonts/Helvetica/helvetica-light-587ebe5a59211.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('/src/fonts/Helvetica/HelveticaNeue-Bold.otf') format('opentype');
+  font-family: 'Helvetica';
+  src: url('/src/fonts/Helvetica/Helvetica-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-}
+} 
 
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('/src/fonts/Helvetica/HelveticaNeue-Medium.otf') format('opentype');
+  font-family: 'Helvetica';
+  src: url('/src/fonts/Helvetica/helvetica-rounded-bold-5871d05ead8de.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
 }

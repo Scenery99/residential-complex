@@ -47,7 +47,7 @@ function Footer() {
             <div className="footer__office-address">
               <p className="footer__office-label">Офис продаж</p>
               <p className="footer__office-details">
-                Москва, Локал наб. 2/4,<br />строение 17, офис 308
+                Москва, Локал наб. 2/4,<br />строение 17, офис 300
               </p>
             </div>
 

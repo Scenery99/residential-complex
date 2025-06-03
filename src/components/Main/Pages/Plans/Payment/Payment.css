@@ -49,7 +49,7 @@
   position: relative;
 }
 
-.payment .middleline {
+.payment .line4 {
   position: absolute;
   width: 63%;
   top: 65px;
@@ -65,7 +65,7 @@
   position: relative;
 }
 
-.payment .down .miniline {
+.payment .down .line5 {
   position: absolute;
   width: 25%;
   top: 82px;
@@ -101,8 +101,8 @@
     padding: 20px;
   }
 
-  .payment .middleline,
-  .payment .down .miniline {
+  .payment .line4,
+  .payment .down .line5 {
     display: none;
   }
 

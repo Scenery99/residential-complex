@@ -1,15 +1,15 @@
 /* Заголовок секции */
-.maintitle {
+.mainTitle {
   text-align: center;
 }
 
-.maintitle .white {
+.mainTitle .white {
   display: flex;
   justify-content: space-between;
   margin-bottom: 32px;
 }
 
-.maintitle .white h2 {
+.mainTitle .white h2 {
   font-family: "TT Travels", sans-serif;
   font-weight: 500;
   font-size: 40px;
@@ -25,7 +25,7 @@
   column-gap: 20px;
   row-gap: 6px;
   margin-bottom: 40px;
-}
+} 
 
 /* Позиционирование ячеек */
 .grid .div1 {
@@ -98,17 +98,14 @@
   margin: 40px 0;
 }
 
-/* ==============================
-   Мобильная адаптация (до 768px)
-   ============================== */
 @media (max-width: 768px) {
-  .maintitle .white {
+  .mainTitle .white {
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
   }
 
-  .maintitle .white h2 {
+  .mainTitle .white h2 {
     font-size: 28px;
     margin-bottom: 15px;
   }

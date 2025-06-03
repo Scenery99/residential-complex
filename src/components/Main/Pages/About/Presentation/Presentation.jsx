@@ -7,7 +7,7 @@ import { IMaskInput } from 'react-imask';
 import { useState } from 'react';
 import Modal from '../../../Modals/Modal';
 
-
+ 
 function Presentation() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [phoneNumber, setPhoneNumber] = useState('');
@@ -27,7 +27,7 @@ function Presentation() {
         </>
       );
     }
-  };
+  }; 
 
   const handleSubmit = (phone) => {
     console.log('Submitted phone from blue cluster:', phone);

@@ -1,144 +1,137 @@
-/* ==============================
-   Секция .greeting
-   ============================== */
-   .greeting {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--color-main-white);
+.greeting {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-main-white);
+}
+
+.greeting .mainTitle {
+  position: relative;
+}
+
+.greeting .mainTitle .logotwo {
+  max-width: 100%;
+  height: auto;
+}
+
+.greeting .mainTitle h1 {
+  font-size: 64px;
+  margin-bottom: 1rem;
+}
+
+.greeting .mainTitle p {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1%;
+  padding-bottom: 48px;
+}
+
+.greeting .mainTitle .line1 {
+  position: absolute;
+  top: 220px;
+  left: 140px;
+}
+
+.greeting .mainLand {
+  position: relative;
+  text-align: center;
+}
+
+.greeting .mainLand img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.greeting .award-div {
+  position: absolute;
+  top: -20px;
+  left: 87%;
+  width: 200px;
+  height: 124px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.greeting .award-div p {
+  font-family: "TT Travels", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: -4%;
+  color: var(--color-text-primary);
+}
+
+.greeting .when {
+  position: absolute;
+  top: 93%;
+  left: 40%;
+  display: flex;
+  gap: 20px;
+  font-family: "TT Travels", sans-serif;
+  line-height: 16px;
+  font-size: 16px;
+  letter-spacing: -2%;
+}
+
+.greeting .when div {
+  padding: 6px 12px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(16px);
+  color: white;
+  border-radius: 5px;
+}
+
+.greeting .when div span {
+  color: var(--color-brand-green);
+}
+
+@media (max-width: 768px) {
+  .greeting {
+    padding: 1px;
   }
-  
-  .greeting .mainTitle {
-    position: relative;
-  }
-  
-  .greeting .mainTitle .logotwo {
-    max-width: 100%;
-    height: auto;
-  }
-  
+
   .greeting .mainTitle h1 {
-    font-size: 64px;
-    margin-bottom: 1rem;
+    font-size: 28px;
+    margin-bottom: 0.5rem;
   }
-  
+
   .greeting .mainTitle p {
-    font-family: "Helvetica Neue", sans-serif;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 28px;
-    letter-spacing: -1%;
-    padding-bottom: 48px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-bottom: 20px;
   }
-  
+
   .greeting .mainTitle .line1 {
-    position: absolute;
-    top: 220px;
-    left: 140px;
+    display: none;
   }
-  
-  .greeting .mainLand {
-    position: relative;
-    text-align: center;
-  }
-  
+
   .greeting .mainLand img {
-    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .greeting .mainLand .award-div {
+    position: static;
+    width: 70%;
     height: auto;
-    display: block;
+    padding: 10px;
+    margin: 20px auto 0;
   }
-  
-  .greeting .award-div {
-    position: absolute;
-    top: -20px;
-    left: 87%;
-    width: 200px;
-    height: 124px;
-    background-color: white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
-  
-  .greeting .award-div p {
-    font-family: "TT Travels", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    letter-spacing: -4%;
-    color: var(--color-text-primary);
-  }
-  
-  .greeting .when {
-    position: absolute;
-    top: 93%;
-    left: 40%;
-    display: flex;
+
+  .greeting .mainLand .when {
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
     gap: 20px;
-    font-family: "TT Travels", sans-serif;
-    line-height: 16px;
-    font-size: 16px;
-    letter-spacing: -2%;
+    width: max-content;
   }
-  
-  .greeting .when div {
-    padding: 6px 12px;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(16px);
-    color: white;
-    border-radius: 5px;
-  }
-  
-  .greeting .when div span {
-    color: var(--color-brand-green);
-  }
-  
-  /* ==============================
-     Мобильная адаптация (до 768px)
-     ============================== */
-  @media (max-width: 768px) {
-    .greeting {
-      padding: 1px;
-    }
-  
-    .greeting .mainTitle h1 {
-      font-size: 28px;
-      margin-bottom: 0.5rem;
-    }
-  
-    .greeting .mainTitle p {
-      font-size: 16px;
-      line-height: 20px;
-      padding-bottom: 20px;
-    }
-  
-    .greeting .mainTitle .line1 {
-      display: none;
-    }
-  
-    .greeting .mainLand img {
-      object-fit: cover;
-    }
-  
-    .greeting .mainLand .award-div {
-      position: static;
-      width: 70%;
-      height: auto;
-      padding: 10px;
-      margin: 20px auto 0;
-    }
-  
-    .greeting .mainLand .when {
-      top: 65%;
-      left: 50%;
-      transform: translateX(-50%);
-      gap: 20px;
-      width: max-content;
-    }
-  }
-  
+}

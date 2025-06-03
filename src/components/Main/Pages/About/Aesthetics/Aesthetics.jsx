@@ -11,7 +11,7 @@ import Container from '../../../Container/Container';
 function Aesthetics() {
   return (
     <Container>
-      <section className="aesthetics">
+      <section className="aesthetics"> 
         {/* Заголовок блока */}
         <h1 className="aesthetics__title">
           Современная эстетика лобби

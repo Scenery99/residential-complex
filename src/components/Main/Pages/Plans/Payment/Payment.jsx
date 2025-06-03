@@ -32,7 +32,7 @@ function Payment() {
       <section className="payment">
         <div className="left">
           <h2>от 4,29% годовых
-            <img className='middleline' src={line4} alt="line" />
+            <img className='line4' src={line4} alt="line" />
           </h2>
           <p>
             Наш ипотечный брокер подберет для вас лучшие <br /> условия от 20 банков; Господдержка на протяжении <br />всего срока ипотеки.
@@ -61,7 +61,7 @@ function Payment() {
           </div>
           <p>
             Беспроцентная рассрочка<br /> на 12 месяцев при первоначальном взносе
-            <img className='miniline' src={line5} alt="line" />
+            <img className='line5' src={line5} alt="line" />
           </p>
           <Button
             text="Узнать условия рассрочки"

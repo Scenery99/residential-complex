@@ -4,20 +4,20 @@
   margin-bottom: 100px;
 }
 
-.finish .maintitle {
+.finish .mainTitle {
   text-align: center;
   position: relative;
 }
 
-.finish .maintitle p {
-  font-family: "Helvetica Neue", sans-serif;
+.finish .mainTitle p {
+  font-family: "Helvetica", sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
   margin: 10px 0 60px 0;
 }
 
-.finish .longline {
+.finish .line3 {
   position: absolute;
   top: 95px;
   left: 186px;
@@ -28,13 +28,12 @@
   gap: 20px;
 }
 
-/* Мобильные стили */
 @media (max-width: 768px) {
   .finish {
     margin-bottom: 50px;
   }
 
-  .finish .maintitle p {
+  .finish .mainTitle p {
     font-size: 16px;
     line-height: 20px;
     margin: 10px 0 40px 0;
@@ -42,7 +41,7 @@
     justify-self: center;
   }
 
-  .finish .longline {
+  .finish .line3 {
     display: none;
   }
 

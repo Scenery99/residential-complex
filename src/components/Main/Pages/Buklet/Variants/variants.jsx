@@ -50,7 +50,7 @@ function Variants() {
     return (
         <Container>
             <section>
-                <div className='maintitle'>
+                <div className='mainTitle'>
                     <h1>2 варианта отделки</h1>
                     <hr className='line'/>
                     <div className='white'>
@@ -74,7 +74,7 @@ function Variants() {
                 <div className="div5"> <img src={Lightthree} alt="photo" /></div>
                 </div>
                 <hr className='line'/>
-                <div className='maintitle'>
+                <div className='mainTitle'>
                     <div className='white'>
                         <h2>Тёмная отделка</h2>
                         <Button

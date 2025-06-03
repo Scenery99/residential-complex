@@ -64,7 +64,6 @@
   border-bottom: none;
 }
 
-/* Мобильная адаптация (до 768px) */
 @media (max-width: 768px) {
   .IntecoDiv {
     flex-direction: column;
