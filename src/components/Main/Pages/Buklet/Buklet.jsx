@@ -1,5 +1,5 @@
 import Finish from './Finishing/Finish';
-import Variants from './Variants/Variants';
+import Variants from "./Variants/Variants.jsx";
 
 function Buklet() {
   return (
