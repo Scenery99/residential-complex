@@ -13,7 +13,7 @@
 
 .aesthetics__item {
   padding: 40px 20px 20px 20px;
-  background-color: white;
+  background-color: white; 
   border-radius: 12px;
   margin-bottom: 12px;
   width: 100%;
@@ -67,17 +67,13 @@
 
 .aesthetics__images {
   display: flex;
-  gap: 8px;
+  gap: 8px; 
 }
 
 .aesthetics__image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-}
-
-.aesthetics__image--first {
-  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -96,10 +92,10 @@
     margin-bottom: 10px;
     border-radius: 8px;
   }
-
-  .aesthetics__image--first {
-    margin-bottom: 10px;
-  }  
+  .aesthetics__images {
+    display: flex;
+    flex-wrap: wrap;
+  }
   
   .aesthetics__row {
     flex-direction: column;

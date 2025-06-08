@@ -3,7 +3,8 @@
   }
   
   .navbar-placeholder {
-    height: 130px;
+    background-color: var(--color-main-white);
+    height: 120px;
   }
   
   /* Мобильная адаптация (до 768px) */
