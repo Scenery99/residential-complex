@@ -16,7 +16,7 @@ function Navbar() {
     initial: { opacity: 0, width: 0 },
     animate: { opacity: 1, width: 'auto' },
     exit: { opacity: 0, width: 0 },
-  };
+  }; 
 
   const mobileVariants = {
     initial: { opacity: 0, x: '100%' },
