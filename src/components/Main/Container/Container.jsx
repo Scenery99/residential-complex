@@ -1,4 +1,4 @@
-import './container.css';
+import './Сontainer.css';
 
 function Container({ children }) {
   return <div className="container">{children}</div>;
