@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { AnimatePresence, motion } from 'framer-motion';
 import { motion, AnimatePresence } from 'framer-motion';
-import Logo from '@/assets/landing/Logo.svg';
+import Logo from '@/assets/landing/logo.svg';
 import '../Navbar/Navbar.css';
 
 function Navbar() {
