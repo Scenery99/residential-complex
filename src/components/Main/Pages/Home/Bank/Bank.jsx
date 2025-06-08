@@ -1,5 +1,5 @@
 import './Bank.css';
-import Logos from '@/assets/Inteco/logos.png';
+import Logos from '@/assets/inteco/logos.png';
 import Container from '../../../Container/Container';
 
 function Bank() {
