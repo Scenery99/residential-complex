@@ -12,7 +12,6 @@ function Aesthetics() {
   return (
     <Container>
       <section className="aesthetics"> 
-        {/* Заголовок блока */}
         <h1 className="aesthetics__title">
           Современная эстетика лобби
         </h1>
@@ -20,7 +19,6 @@ function Aesthetics() {
         {/* Первая карточка */}
         <div className="aesthetics__item">
           <div className="aesthetics__row">
-            {/* Колонка 1: иконка + заголовок + “звёздочки” */}
             <div>
               <div className="aesthetics__header">
                 <img className="aesthetics__icon" src={Icon} alt="icon" />
@@ -46,7 +44,6 @@ function Aesthetics() {
               </div>
             </div>
 
-            {/* Колонка 2: фотографии */}
             <div className="aesthetics__images">
               <img
                 className="aesthetics__image aesthetics__image--first"
@@ -65,7 +62,6 @@ function Aesthetics() {
         {/* Вторая карточка */}
         <div className="aesthetics__item">
           <div className="aesthetics__row">
-            {/* Колонка 1: иконка + заголовок + “звёздочки” */}
             <div>
               <div className="aesthetics__header">
                 <img className="aesthetics__icon" src={Icon2} alt="icon" />
@@ -87,7 +83,6 @@ function Aesthetics() {
               </div>
             </div>
 
-            {/* Колонка 2: фотографии */}
             <div className="aesthetics__images">
               <img
                 className="aesthetics__image aesthetics__image--first"

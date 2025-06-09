@@ -71,9 +71,10 @@
 }
 
 .aesthetics__image {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
+  padding-bottom: 5px;
 }
 
 @media (max-width: 768px) {
@@ -92,6 +93,7 @@
     margin-bottom: 10px;
     border-radius: 8px;
   }
+
   .aesthetics__images {
     display: flex;
     flex-wrap: wrap;

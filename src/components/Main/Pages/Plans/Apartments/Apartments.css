@@ -8,7 +8,7 @@
 .apartments h1 {
   text-align: center;
   margin-bottom: 40px;
-  position: relative; /* чтобы .line4  позиционировался относительно h1 */
+  position: relative; 
 }
 
 .apartments h1 .line4 {
@@ -24,7 +24,6 @@
   left: 230px;
 }
 
-/* Мобильные стили (до 768px) */
 @media (max-width: 768px) {
   .apartments {
     gap: 12px;

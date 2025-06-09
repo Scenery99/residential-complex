@@ -17,8 +17,8 @@ import Modal from '../../../Modals/Modal';
 
 function Variants() {
 
-    const [isModalOpen, setIsModalOpen] = useState(false); // Одно состояние для модалки
-    const [activeVariant, setActiveVariant] = useState(null); // Какой кластер активирован ('blue' или 'green')
+    const [isModalOpen, setIsModalOpen] = useState(false); // состояние для модалки
+    const [activeVariant, setActiveVariant] = useState(null); // rакой кластер активирован blue или green
 
     const handleSubmit = (phone) => {
         console.log(`Submitted phone from ${activeVariant} cluster:`, phone);

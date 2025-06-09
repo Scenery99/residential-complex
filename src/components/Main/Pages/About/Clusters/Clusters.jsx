@@ -1,7 +1,6 @@
 import './Clusters.css';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-// import { AnimatePresence } from 'framer-motion';
 import Container from '../../../Container/Container';
 import Button from '../../../Button/Button';
 import blueLogo from '@/assets/clusters/blue-slide/blue-logo0.svg';
@@ -39,7 +38,6 @@ const MobileSlider = ({
   onOpenModal 
 }) => {
   const [direction, setDirection] = useState(0);
-  // const [isDragging, setIsDragging] = useState(false);
 
   const nextSlide = () => {
     setDirection(1);
@@ -100,9 +98,7 @@ const MobileSlider = ({
             drag="x"
             dragConstraints={{ left: 0, right: 0 }}
             dragElastic={1}
-            // onDragStart={() => setIsDragging(true)}
             onDragEnd={(e, { offset, velocity }) => {
-              // setIsDragging(false);
               const swipe = swipePower(offset.x, velocity.x);
               if (swipe < -swipeConfidenceThreshold) {
                 nextSlide();

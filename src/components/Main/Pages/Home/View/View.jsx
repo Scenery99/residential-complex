@@ -22,14 +22,12 @@ export default function View() {
   const containerRef = useRef(null);
   const autoPlayRef = useRef(null);
 
-  // resize
   useEffect(() => {
     const onResize = () => setIsMobile(window.innerWidth < 768);
     window.addEventListener('resize', onResize);
     return () => window.removeEventListener('resize', onResize);
   }, []);
 
-  // autoplay
   useEffect(() => {
     autoPlayRef.current = setInterval(() => {
       setCurrent(i => (i + 1) % sliderData.length);
@@ -52,7 +50,6 @@ export default function View() {
     trackMouse: true
   });
 
-  // для desktop: вычисляем ширину слайда
   const [slideW, setSlideW] = useState(0);
   useEffect(() => {
     const update = () => {

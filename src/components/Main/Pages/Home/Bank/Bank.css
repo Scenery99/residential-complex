@@ -12,7 +12,6 @@
   height: auto;
 }
 
-/* Адаптация для мобильных устройств (до 768px) */
 @media (max-width: 768px) {
   .bank {
     padding: 1px;

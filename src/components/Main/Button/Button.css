@@ -1,12 +1,10 @@
 :root {
-  /* Цвета, аналогичные оригинальному сайту */
   --color-text-primary: #333333;
   --color-line-primary: #E0E0E0;
   --color-brand-brown: #8B4513;
   --color-white: #FFFFFF;
 }
 
-/* Базовый стиль для всех кнопок */
 .custom-button {
   padding: 14px 24px;
   border: none;

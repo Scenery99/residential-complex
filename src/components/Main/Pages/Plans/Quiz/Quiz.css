@@ -398,7 +398,7 @@
     width: 20px;
     height: 20px;
   }
-  /* Размеры карточек для мобайла */
+  
   .quiz__card.size-large {
     width: calc(50% - 10px);
     height: 160px;

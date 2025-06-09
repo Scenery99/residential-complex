@@ -131,7 +131,6 @@
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* Медиа-запросы для мобильных (до 768px) */
 @media (max-width: 768px) {
   .location .string {
     margin-top: 0;
